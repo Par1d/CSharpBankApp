@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MoneyLIb">
-      <HintPath>E:\Spring 2018\advanced C#\C# BankApp\TestBankApp\TestBankApp\MoneyLIb.dll</HintPath>
+      <HintPath>.\MoneyLIb.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
