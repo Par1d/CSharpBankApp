@@ -6,13 +6,21 @@ using System.Threading.Tasks;
 
 namespace BankClassLibrary
 {
-    class Account
+    public class Account
     {
         private int _accountID;
         private int _pin;
         private string _name;
         private decimal _balance;
         List<Transaction> _history;
+
+        public decimal Balance
+        {
+            get
+            {
+                return _balance;
+            }
+        }
 
         public Account(int accountID, int PIN, string accountName, decimal balance = 0)
         {
@@ -24,14 +32,9 @@ namespace BankClassLibrary
 
 
 
-        public void Deposit(MoneyBag money)
+        public void Deposit(decimal amount)
         {
-
-        }
-
-        MoneyBag Withdraw(decimal amount)
-        {
-
+            _balance += amount;
         }
     }
 }

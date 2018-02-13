@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BankClassLibrary
 {
-    public class Vault : MoneyBag
+    public class Vault
     {
 
     }

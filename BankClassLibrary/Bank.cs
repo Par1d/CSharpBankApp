@@ -15,24 +15,34 @@ namespace BankClassLibrary
 
         public Bank()
         {
-        
+            _vault = new Vault();
+            _atm = new ATM();
+            _teller = new Teller();
+            _accounts = new List<Account>();
+            _customers = new List<Customer>();
         }
 
-        public void CreateCustomer(string username)
+        public Customer CreateCustomer(string username)
         {
-            _customers.Add(new Customer(username));
+            Customer cst = new Customer(username);
+            _customers.Add(cst);
+            return cst;
         }
 
-        public void OpenAccount(Customer cst, int accountID, int PIN, string accountName, decimal depositAmount)
+        public Account OpenAccount(Customer cst, int accountID, int PIN, string accountName, decimal depositAmount)
         {
-            if (depositAmount < 25m)
+            if (depositAmount < 25)
             {
                 //Snarky comment
-            } else
+                return null;
+            }
+            else
             {
                 Account acct = new Account(accountID, PIN, accountName, depositAmount);
                 _accounts.Add(acct);
+                cst.UserAccount = acct;
 
+                return acct;
             }
 
 
