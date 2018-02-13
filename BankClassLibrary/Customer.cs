@@ -7,12 +7,24 @@ namespace BankClassLibrary
 {
     public class Customer
     {
-        private int _customerID;
-        private Dictionary<AccountType, Account> _accounts;
+        private string _username;
+        private Account _account;
 
-        public Customer()
+        public Account UserAccount
         {
-            throw new System.NotImplementedException();
+            get
+            {
+                return _account;
+            }
+            set
+            {
+                _account = value;
+            }
+        }
+
+        public Customer(string username)
+        {
+            _username = username;
         }
 
         public void DisplayAccounts()
