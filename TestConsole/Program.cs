@@ -16,9 +16,10 @@ namespace TestConsole
             Account myAccount = bank.OpenAccount(bob, 1234, 1234, "MyChecking", 500m);
 
             Console.WriteLine(bob.UserAccount.Balance);
+            
             Console.ReadKey();
 
-            Console.WriteLine()
+            Console.WriteLine();//added ;
         }
     }
 }
