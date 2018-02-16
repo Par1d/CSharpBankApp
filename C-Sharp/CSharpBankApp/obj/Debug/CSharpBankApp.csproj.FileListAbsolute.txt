@@ -1,0 +1,13 @@
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\bin\Debug\CSharpBankApp.exe.config
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\bin\Debug\CSharpBankApp.exe
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\bin\Debug\CSharpBankApp.pdb
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\bin\Debug\MoneyLIb.dll
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\obj\Debug\CSharpBankApp.csprojResolveAssemblyReference.cache
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\obj\Debug\CSharpBankApp.Form1.resources
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\obj\Debug\CSharpBankApp.Properties.Resources.resources
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\obj\Debug\CSharpBankApp.csproj.GenerateResource.Cache
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\obj\Debug\CSharpBankApp.csproj.CoreCompileInputs.cache
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\obj\Debug\CSharpBankApp.exe
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\obj\Debug\CSharpBankApp.pdb
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\obj\Debug\Login.Loginform.resources
+C:\Users\C Sharp.B056\source\repos\C-Sharp\CSharpBankApp\obj\Debug\New_User.NewUserForm.resources

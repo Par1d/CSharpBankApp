@@ -1,0 +1,7 @@
+C:\Users\C Sharp.B056\source\repos\C-Sharp\BankClassLibrary\bin\Debug\BankClassLibrary.dll
+C:\Users\C Sharp.B056\source\repos\C-Sharp\BankClassLibrary\bin\Debug\BankClassLibrary.pdb
+C:\Users\C Sharp.B056\source\repos\C-Sharp\BankClassLibrary\bin\Debug\MoneyLIb.dll
+C:\Users\C Sharp.B056\source\repos\C-Sharp\BankClassLibrary\obj\Debug\BankClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\C Sharp.B056\source\repos\C-Sharp\BankClassLibrary\obj\Debug\BankClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\C Sharp.B056\source\repos\C-Sharp\BankClassLibrary\obj\Debug\BankClassLibrary.dll
+C:\Users\C Sharp.B056\source\repos\C-Sharp\BankClassLibrary\obj\Debug\BankClassLibrary.pdb
