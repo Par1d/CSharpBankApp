@@ -22,29 +22,12 @@ namespace BankClassLibrary
             }
         }
 
-        public int AccountID
-        {
-            get
-            {
-                return _accountID;
-            }
-        }
-
-        public List<Transaction> History
-        {
-            get
-            {
-                return _history;
-            }
-        }
-
         public Account(int accountID, int PIN, string accountName, decimal balance = 0)
         {
             _accountID = accountID;
             _pin = PIN;
             _name = accountName;
             _balance = balance;
-            _history = new List<Transaction>();
         }
 
 
@@ -52,15 +35,6 @@ namespace BankClassLibrary
         public void Deposit(decimal amount)
         {
             _balance += amount;
-            Transaction transaction = new Transaction(_accountID, amount, TransactionType.Deposit);
-            _history.Add(transaction);
-        }
-
-        public void Withdraw(decimal amount)
-        {
-            _balance -= amount;
-            Transaction transaction = new Transaction(_accountID, amount, TransactionType.Withdrawal);
-            _history.Add(transaction);
         }
     }
 }

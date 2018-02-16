@@ -7,27 +7,19 @@ namespace BankClassLibrary
 {
     public class Bank
     {
-        private Vault _vault;
-        private ATM _atm;
-        private Teller _teller;
-        private Dictionary<int, Account> _accounts;
-        private List<Customer> _customers;
+        Vault _vault;
+        ATM _atm;
+        Teller _teller;
+        List<Account> _accounts;
+        List<Customer> _customers;
 
         public Bank()
         {
             _vault = new Vault();
             _atm = new ATM();
             _teller = new Teller();
-            _accounts = new Dictionary<int, Account>();
+            _accounts = new List<Account>();
             _customers = new List<Customer>();
-        }
-
-        public Dictionary<int, Account> Accounts
-        {
-            get
-            {
-                return _accounts;
-            }
         }
 
         public Customer CreateCustomer(string username)
@@ -47,8 +39,8 @@ namespace BankClassLibrary
             else
             {
                 Account acct = new Account(accountID, PIN, accountName, depositAmount);
-                _accounts.Add(accountID, acct);
-                cst.AccountID = accountID;
+                _accounts.Add(acct);
+                cst.UserAccount = acct;
 
                 return acct;
             }
@@ -56,9 +48,9 @@ namespace BankClassLibrary
 
         }
 
-        public decimal GetAccountBalance(Customer cst, int accountID)
+        public decimal GetAccountBalance(Customer cst, string accountNumber)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
     }
 }
