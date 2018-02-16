@@ -8,17 +8,17 @@ namespace BankClassLibrary
     public class Customer
     {
         private string _username;
-        private Account _account;
+        private int _accountID;
 
-        public Account UserAccount
+        public int AccountID
         {
             get
             {
-                return _account;
+                return _accountID;
             }
             set
             {
-                _account = value;
+                _accountID = value;
             }
         }
 

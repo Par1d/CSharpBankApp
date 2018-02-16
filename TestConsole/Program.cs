@@ -15,10 +15,13 @@ namespace TestConsole
             Customer bob = bank.CreateCustomer("bobby");
             Account myAccount = bank.OpenAccount(bob, 1234, 1234, "MyChecking", 500m);
 
-            Console.WriteLine(bob.UserAccount.Balance);
-            Console.ReadKey();
+            myAccount.Withdraw(100);
 
-            Console.WriteLine()
+            int account = bob.AccountID;
+            Account account1 = bank.Accounts[account];
+            Console.WriteLine(account1.History[0].Date);
+
+            
         }
     }
 }
