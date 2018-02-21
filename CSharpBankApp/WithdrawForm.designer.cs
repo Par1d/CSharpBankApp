@@ -31,7 +31,7 @@
             this.Mainlbl = new System.Windows.Forms.Label();
             this.Amountlbl = new System.Windows.Forms.Label();
             this.Amounttxt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Secondarylbl = new System.Windows.Forms.Label();
             this.VerifyAmountlbl = new System.Windows.Forms.Label();
             this.VerifyAmounttxt = new System.Windows.Forms.TextBox();
             this.Pinlbl = new System.Windows.Forms.Label();
@@ -49,9 +49,9 @@
             this.Mainlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mainlbl.Location = new System.Drawing.Point(21, 9);
             this.Mainlbl.Name = "Mainlbl";
-            this.Mainlbl.Size = new System.Drawing.Size(416, 13);
+            this.Mainlbl.Size = new System.Drawing.Size(418, 13);
             this.Mainlbl.TabIndex = 0;
-            this.Mainlbl.Text = "Please Enter The Amount You With To Withdraw And Provide Your Pin For Verificatio" +
+            this.Mainlbl.Text = "Please Enter The Amount You Wish To Withdraw And Provide Your Pin For Verificatio" +
     "n";
             // 
             // Amountlbl
@@ -71,14 +71,14 @@
             this.Amounttxt.Size = new System.Drawing.Size(113, 20);
             this.Amounttxt.TabIndex = 1;
             // 
-            // label1
+            // Secondarylbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(91, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Please Do Not Include The $ When Entering Your Amount";
+            this.Secondarylbl.AutoSize = true;
+            this.Secondarylbl.Location = new System.Drawing.Point(91, 22);
+            this.Secondarylbl.Name = "Secondarylbl";
+            this.Secondarylbl.Size = new System.Drawing.Size(283, 13);
+            this.Secondarylbl.TabIndex = 0;
+            this.Secondarylbl.Text = "Please Do Not Include The $ When Entering Your Amount";
             // 
             // VerifyAmountlbl
             // 
@@ -176,7 +176,7 @@
             this.Controls.Add(this.Pinlbl);
             this.Controls.Add(this.VerifyAmounttxt);
             this.Controls.Add(this.VerifyAmountlbl);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Secondarylbl);
             this.Controls.Add(this.Amounttxt);
             this.Controls.Add(this.Amountlbl);
             this.Controls.Add(this.Mainlbl);
@@ -192,7 +192,7 @@
         private System.Windows.Forms.Label Mainlbl;
         private System.Windows.Forms.Label Amountlbl;
         private System.Windows.Forms.TextBox Amounttxt;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Secondarylbl;
         private System.Windows.Forms.Label VerifyAmountlbl;
         private System.Windows.Forms.TextBox VerifyAmounttxt;
         private System.Windows.Forms.Label Pinlbl;
