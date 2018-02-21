@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CSharpBankApp.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MoneyLIb">
       <HintPath>.\MoneyLIb.dll</HintPath>
@@ -49,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DepositForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +85,9 @@
     <Compile Include="WithdrawForm.designer.cs">
       <DependentUpon>WithdrawForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DepositForm.resx">
       <DependentUpon>DepositForm.cs</DependentUpon>
     </EmbeddedResource>
