@@ -1,4 +1,4 @@
-﻿namespace Withdraw
+﻿namespace CSharpBankApp
 {
     partial class WithdrawForm
     {

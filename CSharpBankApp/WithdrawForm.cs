@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Withdraw
+namespace CSharpBankApp
 {
     public partial class WithdrawForm : Form
     {

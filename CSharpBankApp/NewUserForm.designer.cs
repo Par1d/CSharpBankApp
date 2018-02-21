@@ -1,4 +1,4 @@
-﻿namespace New_User
+﻿namespace CSharpBankApp
 {
     partial class NewUserForm
     {

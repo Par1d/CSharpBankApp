@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace New_User
+namespace CSharpBankApp
 {
     public partial class NewUserForm : Form
     {

@@ -1,6 +1,6 @@
-﻿namespace Login
+﻿namespace CSharpBankApp
 {
-    partial class Loginform
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -110,8 +110,9 @@
             this.Createlbl.TabIndex = 5;
             this.Createlbl.TabStop = true;
             this.Createlbl.Text = "Create an Account";
+            this.Createlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Createlbl_LinkClicked);
             // 
-            // Loginform
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -124,7 +125,7 @@
             this.Controls.Add(this.Passwordlbl);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Mainlbl);
-            this.Name = "Loginform";
+            this.Name = "LoginForm";
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

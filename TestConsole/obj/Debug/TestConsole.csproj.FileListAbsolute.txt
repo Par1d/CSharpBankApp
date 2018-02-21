@@ -7,3 +7,12 @@ C:\Users\C Sharp.B056\source\repos\C-Sharp\TestConsole\obj\Debug\TestConsole.csp
 C:\Users\C Sharp.B056\source\repos\C-Sharp\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
 C:\Users\C Sharp.B056\source\repos\C-Sharp\TestConsole\obj\Debug\TestConsole.exe
 C:\Users\C Sharp.B056\source\repos\C-Sharp\TestConsole\obj\Debug\TestConsole.pdb
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\TestConsole.exe.config
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\TestConsole.exe
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\TestConsole.pdb
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\BankClassLibrary.dll
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\BankClassLibrary.pdb
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\TestConsole\obj\Debug\TestConsole.exe
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\TestConsole\obj\Debug\TestConsole.pdb

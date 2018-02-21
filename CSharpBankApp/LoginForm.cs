@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Login
+namespace CSharpBankApp
 {
-    public partial class Loginform : Form
+    public partial class LoginForm : Form
     {
-        public Loginform()
+        public LoginForm()
         {
             InitializeComponent();
+        }
+
+        private void Createlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new NewUserForm().Show();
+            this.Hide();
         }
     }
 }
