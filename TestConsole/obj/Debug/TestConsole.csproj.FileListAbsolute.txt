@@ -25,3 +25,12 @@ C:\Users\ITS-171-2\source\repos\CSharpBankApp\TestConsole\obj\Debug\TestConsole.
 C:\Users\ITS-171-2\source\repos\CSharpBankApp\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
 C:\Users\ITS-171-2\source\repos\CSharpBankApp\TestConsole\obj\Debug\TestConsole.exe
 C:\Users\ITS-171-2\source\repos\CSharpBankApp\TestConsole\obj\Debug\TestConsole.pdb
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\TestConsole.exe.config
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\TestConsole.exe
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\TestConsole.pdb
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\BankClassLibrary.dll
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\TestConsole\bin\Debug\BankClassLibrary.pdb
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\TestConsole\obj\Debug\TestConsole.exe
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\TestConsole\obj\Debug\TestConsole.pdb

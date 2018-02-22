@@ -20,7 +20,6 @@ namespace CSharpBankApp
         private void Createlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             new NewUserForm().Show();
-            this.Hide();
         }
     }
 }

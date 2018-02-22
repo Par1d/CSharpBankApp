@@ -34,8 +34,9 @@
             this.Usernametxt = new System.Windows.Forms.TextBox();
             this.Passwordtxt = new System.Windows.Forms.TextBox();
             this.Cancelbtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Loginbtn = new System.Windows.Forms.Button();
             this.Createlbl = new System.Windows.Forms.LinkLabel();
+            this.Forgotlnk = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // Mainlbl
@@ -92,19 +93,19 @@
             this.Cancelbtn.Text = "&Cancel";
             this.Cancelbtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Loginbtn
             // 
-            this.button2.Location = new System.Drawing.Point(206, 117);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Loginbtn.Location = new System.Drawing.Point(206, 117);
+            this.Loginbtn.Name = "Loginbtn";
+            this.Loginbtn.Size = new System.Drawing.Size(75, 23);
+            this.Loginbtn.TabIndex = 4;
+            this.Loginbtn.Text = "&Login";
+            this.Loginbtn.UseVisualStyleBackColor = true;
             // 
             // Createlbl
             // 
             this.Createlbl.AutoSize = true;
-            this.Createlbl.Location = new System.Drawing.Point(13, 161);
+            this.Createlbl.Location = new System.Drawing.Point(48, 152);
             this.Createlbl.Name = "Createlbl";
             this.Createlbl.Size = new System.Drawing.Size(96, 13);
             this.Createlbl.TabIndex = 5;
@@ -112,20 +113,33 @@
             this.Createlbl.Text = "Create an Account";
             this.Createlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Createlbl_LinkClicked);
             // 
+            // Forgotlnk
+            // 
+            this.Forgotlnk.AutoSize = true;
+            this.Forgotlnk.Location = new System.Drawing.Point(203, 152);
+            this.Forgotlnk.Name = "Forgotlnk";
+            this.Forgotlnk.Size = new System.Drawing.Size(92, 13);
+            this.Forgotlnk.TabIndex = 6;
+            this.Forgotlnk.TabStop = true;
+            this.Forgotlnk.Text = "Forgot Password?";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 221);
+            this.ClientSize = new System.Drawing.Size(350, 178);
+            this.Controls.Add(this.Forgotlnk);
             this.Controls.Add(this.Createlbl);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Loginbtn);
             this.Controls.Add(this.Cancelbtn);
             this.Controls.Add(this.Passwordtxt);
             this.Controls.Add(this.Usernametxt);
             this.Controls.Add(this.Passwordlbl);
             this.Controls.Add(this.Usernamelbl);
             this.Controls.Add(this.Mainlbl);
+            this.Location = new System.Drawing.Point(0, 380);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,8 +154,9 @@
         private System.Windows.Forms.TextBox Usernametxt;
         private System.Windows.Forms.TextBox Passwordtxt;
         private System.Windows.Forms.Button Cancelbtn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Loginbtn;
         private System.Windows.Forms.LinkLabel Createlbl;
+        private System.Windows.Forms.LinkLabel Forgotlnk;
     }
 }
 

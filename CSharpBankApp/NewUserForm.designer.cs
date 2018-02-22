@@ -172,7 +172,7 @@
             // 
             this.Password1lbl.AutoSize = true;
             this.Password1lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password1lbl.Location = new System.Drawing.Point(46, 176);
+            this.Password1lbl.Location = new System.Drawing.Point(46, 158);
             this.Password1lbl.Name = "Password1lbl";
             this.Password1lbl.Size = new System.Drawing.Size(69, 15);
             this.Password1lbl.TabIndex = 0;
@@ -182,7 +182,7 @@
             // 
             this.Usernamelbl.AutoSize = true;
             this.Usernamelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usernamelbl.Location = new System.Drawing.Point(42, 150);
+            this.Usernamelbl.Location = new System.Drawing.Point(42, 132);
             this.Usernamelbl.Name = "Usernamelbl";
             this.Usernamelbl.Size = new System.Drawing.Size(73, 15);
             this.Usernamelbl.TabIndex = 0;
@@ -190,14 +190,14 @@
             // 
             // Usernametxt
             // 
-            this.Usernametxt.Location = new System.Drawing.Point(121, 145);
+            this.Usernametxt.Location = new System.Drawing.Point(121, 127);
             this.Usernametxt.Name = "Usernametxt";
             this.Usernametxt.Size = new System.Drawing.Size(140, 20);
             this.Usernametxt.TabIndex = 6;
             // 
             // Passwordtxt
             // 
-            this.Passwordtxt.Location = new System.Drawing.Point(121, 171);
+            this.Passwordtxt.Location = new System.Drawing.Point(121, 153);
             this.Passwordtxt.Name = "Passwordtxt";
             this.Passwordtxt.PasswordChar = '*';
             this.Passwordtxt.Size = new System.Drawing.Size(140, 20);
@@ -205,7 +205,7 @@
             // 
             // VerifyPasswordtxt
             // 
-            this.VerifyPasswordtxt.Location = new System.Drawing.Point(371, 171);
+            this.VerifyPasswordtxt.Location = new System.Drawing.Point(371, 153);
             this.VerifyPasswordtxt.Name = "VerifyPasswordtxt";
             this.VerifyPasswordtxt.PasswordChar = '*';
             this.VerifyPasswordtxt.Size = new System.Drawing.Size(140, 20);
@@ -215,7 +215,7 @@
             // 
             this.VerifyPasswordlbl.AutoSize = true;
             this.VerifyPasswordlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VerifyPasswordlbl.Location = new System.Drawing.Point(264, 176);
+            this.VerifyPasswordlbl.Location = new System.Drawing.Point(264, 158);
             this.VerifyPasswordlbl.Name = "VerifyPasswordlbl";
             this.VerifyPasswordlbl.Size = new System.Drawing.Size(101, 15);
             this.VerifyPasswordlbl.TabIndex = 0;
@@ -225,7 +225,7 @@
             // 
             this.Mailinglbl.AutoSize = true;
             this.Mailinglbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mailinglbl.Location = new System.Drawing.Point(12, 239);
+            this.Mailinglbl.Location = new System.Drawing.Point(12, 198);
             this.Mailinglbl.Name = "Mailinglbl";
             this.Mailinglbl.Size = new System.Drawing.Size(103, 15);
             this.Mailinglbl.TabIndex = 0;
@@ -233,7 +233,7 @@
             // 
             // Mailingtxt
             // 
-            this.Mailingtxt.Location = new System.Drawing.Point(121, 234);
+            this.Mailingtxt.Location = new System.Drawing.Point(121, 193);
             this.Mailingtxt.Name = "Mailingtxt";
             this.Mailingtxt.Size = new System.Drawing.Size(381, 20);
             this.Mailingtxt.TabIndex = 9;
@@ -242,7 +242,7 @@
             // 
             this.MailingCitylbl.AutoSize = true;
             this.MailingCitylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MailingCitylbl.Location = new System.Drawing.Point(24, 265);
+            this.MailingCitylbl.Location = new System.Drawing.Point(24, 224);
             this.MailingCitylbl.Name = "MailingCitylbl";
             this.MailingCitylbl.Size = new System.Drawing.Size(91, 15);
             this.MailingCitylbl.TabIndex = 0;
@@ -250,7 +250,7 @@
             // 
             // MailingCitytxt
             // 
-            this.MailingCitytxt.Location = new System.Drawing.Point(121, 260);
+            this.MailingCitytxt.Location = new System.Drawing.Point(121, 219);
             this.MailingCitytxt.Name = "MailingCitytxt";
             this.MailingCitytxt.Size = new System.Drawing.Size(381, 20);
             this.MailingCitytxt.TabIndex = 10;
@@ -259,7 +259,7 @@
             // 
             this.AddressCheck.AutoSize = true;
             this.AddressCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressCheck.Location = new System.Drawing.Point(64, 297);
+            this.AddressCheck.Location = new System.Drawing.Point(64, 256);
             this.AddressCheck.Name = "AddressCheck";
             this.AddressCheck.Size = new System.Drawing.Size(373, 19);
             this.AddressCheck.TabIndex = 11;
@@ -270,7 +270,7 @@
             // 
             this.Physicallbl.AutoSize = true;
             this.Physicallbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Physicallbl.Location = new System.Drawing.Point(8, 338);
+            this.Physicallbl.Location = new System.Drawing.Point(8, 297);
             this.Physicallbl.Name = "Physicallbl";
             this.Physicallbl.Size = new System.Drawing.Size(107, 15);
             this.Physicallbl.TabIndex = 0;
@@ -278,14 +278,14 @@
             // 
             // Physicaltxt
             // 
-            this.Physicaltxt.Location = new System.Drawing.Point(121, 333);
+            this.Physicaltxt.Location = new System.Drawing.Point(121, 292);
             this.Physicaltxt.Name = "Physicaltxt";
             this.Physicaltxt.Size = new System.Drawing.Size(381, 20);
             this.Physicaltxt.TabIndex = 12;
             // 
             // PhysicalCitytxt
             // 
-            this.PhysicalCitytxt.Location = new System.Drawing.Point(121, 359);
+            this.PhysicalCitytxt.Location = new System.Drawing.Point(121, 318);
             this.PhysicalCitytxt.Name = "PhysicalCitytxt";
             this.PhysicalCitytxt.Size = new System.Drawing.Size(381, 20);
             this.PhysicalCitytxt.TabIndex = 13;
@@ -294,7 +294,7 @@
             // 
             this.PhysicalCitylbl.AutoSize = true;
             this.PhysicalCitylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhysicalCitylbl.Location = new System.Drawing.Point(24, 364);
+            this.PhysicalCitylbl.Location = new System.Drawing.Point(24, 323);
             this.PhysicalCitylbl.Name = "PhysicalCitylbl";
             this.PhysicalCitylbl.Size = new System.Drawing.Size(91, 15);
             this.PhysicalCitylbl.TabIndex = 0;
@@ -304,7 +304,7 @@
             // 
             this.Homelbl.AutoSize = true;
             this.Homelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Homelbl.Location = new System.Drawing.Point(35, 411);
+            this.Homelbl.Location = new System.Drawing.Point(35, 370);
             this.Homelbl.Name = "Homelbl";
             this.Homelbl.Size = new System.Drawing.Size(80, 15);
             this.Homelbl.TabIndex = 0;
@@ -314,7 +314,7 @@
             // 
             this.Worklbl.AutoSize = true;
             this.Worklbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Worklbl.Location = new System.Drawing.Point(41, 437);
+            this.Worklbl.Location = new System.Drawing.Point(41, 396);
             this.Worklbl.Name = "Worklbl";
             this.Worklbl.Size = new System.Drawing.Size(74, 15);
             this.Worklbl.TabIndex = 0;
@@ -324,7 +324,7 @@
             // 
             this.Celllbl.AutoSize = true;
             this.Celllbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Celllbl.Location = new System.Drawing.Point(48, 463);
+            this.Celllbl.Location = new System.Drawing.Point(48, 422);
             this.Celllbl.Name = "Celllbl";
             this.Celllbl.Size = new System.Drawing.Size(67, 15);
             this.Celllbl.TabIndex = 0;
@@ -332,21 +332,21 @@
             // 
             // Hometxt
             // 
-            this.Hometxt.Location = new System.Drawing.Point(121, 406);
+            this.Hometxt.Location = new System.Drawing.Point(121, 365);
             this.Hometxt.Name = "Hometxt";
             this.Hometxt.Size = new System.Drawing.Size(140, 20);
             this.Hometxt.TabIndex = 14;
             // 
             // Worktxt
             // 
-            this.Worktxt.Location = new System.Drawing.Point(121, 432);
+            this.Worktxt.Location = new System.Drawing.Point(121, 391);
             this.Worktxt.Name = "Worktxt";
             this.Worktxt.Size = new System.Drawing.Size(140, 20);
             this.Worktxt.TabIndex = 15;
             // 
             // Celltxt
             // 
-            this.Celltxt.Location = new System.Drawing.Point(121, 458);
+            this.Celltxt.Location = new System.Drawing.Point(121, 417);
             this.Celltxt.Name = "Celltxt";
             this.Celltxt.Size = new System.Drawing.Size(140, 20);
             this.Celltxt.TabIndex = 16;
@@ -355,7 +355,7 @@
             // 
             this.Emaillbl.AutoSize = true;
             this.Emaillbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Emaillbl.Location = new System.Drawing.Point(64, 514);
+            this.Emaillbl.Location = new System.Drawing.Point(64, 473);
             this.Emaillbl.Name = "Emaillbl";
             this.Emaillbl.Size = new System.Drawing.Size(51, 15);
             this.Emaillbl.TabIndex = 0;
@@ -365,7 +365,7 @@
             // 
             this.EmailVerifylbl.AutoSize = true;
             this.EmailVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailVerifylbl.Location = new System.Drawing.Point(32, 540);
+            this.EmailVerifylbl.Location = new System.Drawing.Point(32, 499);
             this.EmailVerifylbl.Name = "EmailVerifylbl";
             this.EmailVerifylbl.Size = new System.Drawing.Size(83, 15);
             this.EmailVerifylbl.TabIndex = 0;
@@ -373,14 +373,14 @@
             // 
             // Emailtxt
             // 
-            this.Emailtxt.Location = new System.Drawing.Point(121, 509);
+            this.Emailtxt.Location = new System.Drawing.Point(121, 468);
             this.Emailtxt.Name = "Emailtxt";
             this.Emailtxt.Size = new System.Drawing.Size(245, 20);
             this.Emailtxt.TabIndex = 19;
             // 
             // VerifyEmailtxt
             // 
-            this.VerifyEmailtxt.Location = new System.Drawing.Point(121, 535);
+            this.VerifyEmailtxt.Location = new System.Drawing.Point(121, 494);
             this.VerifyEmailtxt.Name = "VerifyEmailtxt";
             this.VerifyEmailtxt.Size = new System.Drawing.Size(244, 20);
             this.VerifyEmailtxt.TabIndex = 18;
@@ -389,7 +389,7 @@
             // 
             this.Pinlbl.AutoSize = true;
             this.Pinlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pinlbl.Location = new System.Drawing.Point(282, 437);
+            this.Pinlbl.Location = new System.Drawing.Point(282, 396);
             this.Pinlbl.Name = "Pinlbl";
             this.Pinlbl.Size = new System.Drawing.Size(84, 15);
             this.Pinlbl.TabIndex = 0;
@@ -399,7 +399,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(299, 463);
+            this.label1.Location = new System.Drawing.Point(299, 422);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 19;
@@ -407,7 +407,7 @@
             // 
             // Pintxt
             // 
-            this.Pintxt.Location = new System.Drawing.Point(371, 432);
+            this.Pintxt.Location = new System.Drawing.Point(371, 391);
             this.Pintxt.MaxLength = 4;
             this.Pintxt.Name = "Pintxt";
             this.Pintxt.PasswordChar = '*';
@@ -418,7 +418,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(294, 406);
+            this.label2.Location = new System.Drawing.Point(294, 365);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(177, 15);
             this.label2.TabIndex = 20;
@@ -426,7 +426,7 @@
             // 
             // VerifyPintxt
             // 
-            this.VerifyPintxt.Location = new System.Drawing.Point(371, 458);
+            this.VerifyPintxt.Location = new System.Drawing.Point(371, 417);
             this.VerifyPintxt.MaxLength = 4;
             this.VerifyPintxt.Name = "VerifyPintxt";
             this.VerifyPintxt.PasswordChar = '*';
@@ -437,7 +437,7 @@
             // 
             this.Answerlbl.AutoSize = true;
             this.Answerlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Answerlbl.Location = new System.Drawing.Point(189, 629);
+            this.Answerlbl.Location = new System.Drawing.Point(189, 588);
             this.Answerlbl.Name = "Answerlbl";
             this.Answerlbl.Size = new System.Drawing.Size(157, 15);
             this.Answerlbl.TabIndex = 0;
@@ -447,7 +447,7 @@
             // 
             this.Questionlbl.AutoSize = true;
             this.Questionlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Questionlbl.Location = new System.Drawing.Point(180, 577);
+            this.Questionlbl.Location = new System.Drawing.Point(180, 536);
             this.Questionlbl.Name = "Questionlbl";
             this.Questionlbl.Size = new System.Drawing.Size(166, 15);
             this.Questionlbl.TabIndex = 0;
@@ -455,21 +455,21 @@
             // 
             // Questiontxt
             // 
-            this.Questiontxt.Location = new System.Drawing.Point(38, 595);
+            this.Questiontxt.Location = new System.Drawing.Point(38, 554);
             this.Questiontxt.Name = "Questiontxt";
             this.Questiontxt.Size = new System.Drawing.Size(433, 20);
             this.Questiontxt.TabIndex = 19;
             // 
             // Answertxt
             // 
-            this.Answertxt.Location = new System.Drawing.Point(38, 647);
+            this.Answertxt.Location = new System.Drawing.Point(38, 606);
             this.Answertxt.Name = "Answertxt";
             this.Answertxt.Size = new System.Drawing.Size(433, 20);
             this.Answertxt.TabIndex = 20;
             // 
             // Cancelbtn
             // 
-            this.Cancelbtn.Location = new System.Drawing.Point(38, 688);
+            this.Cancelbtn.Location = new System.Drawing.Point(39, 650);
             this.Cancelbtn.Name = "Cancelbtn";
             this.Cancelbtn.Size = new System.Drawing.Size(75, 23);
             this.Cancelbtn.TabIndex = 21;
@@ -478,7 +478,7 @@
             // 
             // Clearbtn
             // 
-            this.Clearbtn.Location = new System.Drawing.Point(221, 688);
+            this.Clearbtn.Location = new System.Drawing.Point(222, 650);
             this.Clearbtn.Name = "Clearbtn";
             this.Clearbtn.Size = new System.Drawing.Size(75, 23);
             this.Clearbtn.TabIndex = 22;
@@ -487,7 +487,7 @@
             // 
             // Submitbtn
             // 
-            this.Submitbtn.Location = new System.Drawing.Point(396, 688);
+            this.Submitbtn.Location = new System.Drawing.Point(397, 650);
             this.Submitbtn.Name = "Submitbtn";
             this.Submitbtn.Size = new System.Drawing.Size(75, 23);
             this.Submitbtn.TabIndex = 23;
@@ -498,7 +498,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(523, 733);
+            this.ClientSize = new System.Drawing.Size(523, 683);
             this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.Cancelbtn);
@@ -546,8 +546,10 @@
             this.Controls.Add(this.Firsttxt);
             this.Controls.Add(this.Firstlbl);
             this.Controls.Add(this.Requirementslbl);
+            this.Location = new System.Drawing.Point(405, 0);
             this.Name = "NewUserForm";
-            this.Text = "Create A New Account";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "New User";
             this.ResumeLayout(false);
             this.PerformLayout();
 

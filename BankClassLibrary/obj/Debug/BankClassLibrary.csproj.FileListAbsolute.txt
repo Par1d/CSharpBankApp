@@ -19,3 +19,10 @@ C:\Users\ITS-171-2\source\repos\CSharpBankApp\BankClassLibrary\obj\Debug\BankCla
 C:\Users\ITS-171-2\source\repos\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\ITS-171-2\source\repos\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.dll
 C:\Users\ITS-171-2\source\repos\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.pdb
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\bin\Debug\BankClassLibrary.dll
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\bin\Debug\BankClassLibrary.pdb
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\bin\Debug\MoneyLIb.dll
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.dll
+C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.pdb

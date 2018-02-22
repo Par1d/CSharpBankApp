@@ -16,5 +16,10 @@ namespace CSharpBankApp
         {
             InitializeComponent();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            new LoginForm().Show();
+        }
     }
 }
