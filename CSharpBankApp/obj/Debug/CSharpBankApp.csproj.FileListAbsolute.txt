@@ -55,3 +55,4 @@ C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\CSharpBankApp\obj\Debug\
 C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.csproj.CoreCompileInputs.cache
 C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.exe
 C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.pdb
+C:\Users\C Sharp.B056\Documents\_C Sharp Project\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.Dashboard.resources
