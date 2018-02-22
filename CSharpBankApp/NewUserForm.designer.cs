@@ -383,7 +383,7 @@
             this.VerifyEmailtxt.Location = new System.Drawing.Point(121, 494);
             this.VerifyEmailtxt.Name = "VerifyEmailtxt";
             this.VerifyEmailtxt.Size = new System.Drawing.Size(244, 20);
-            this.VerifyEmailtxt.TabIndex = 18;
+            this.VerifyEmailtxt.TabIndex = 20;
             // 
             // Pinlbl
             // 
@@ -458,21 +458,22 @@
             this.Questiontxt.Location = new System.Drawing.Point(38, 554);
             this.Questiontxt.Name = "Questiontxt";
             this.Questiontxt.Size = new System.Drawing.Size(433, 20);
-            this.Questiontxt.TabIndex = 19;
+            this.Questiontxt.TabIndex = 21;
             // 
             // Answertxt
             // 
             this.Answertxt.Location = new System.Drawing.Point(38, 606);
             this.Answertxt.Name = "Answertxt";
             this.Answertxt.Size = new System.Drawing.Size(433, 20);
-            this.Answertxt.TabIndex = 20;
+            this.Answertxt.TabIndex = 22;
             // 
             // Cancelbtn
             // 
+            this.Cancelbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Cancelbtn.Location = new System.Drawing.Point(39, 650);
             this.Cancelbtn.Name = "Cancelbtn";
             this.Cancelbtn.Size = new System.Drawing.Size(75, 23);
-            this.Cancelbtn.TabIndex = 21;
+            this.Cancelbtn.TabIndex = 23;
             this.Cancelbtn.Text = "&Cancel";
             this.Cancelbtn.UseVisualStyleBackColor = true;
             // 
@@ -481,7 +482,7 @@
             this.Clearbtn.Location = new System.Drawing.Point(222, 650);
             this.Clearbtn.Name = "Clearbtn";
             this.Clearbtn.Size = new System.Drawing.Size(75, 23);
-            this.Clearbtn.TabIndex = 22;
+            this.Clearbtn.TabIndex = 24;
             this.Clearbtn.Text = "Clea&r";
             this.Clearbtn.UseVisualStyleBackColor = true;
             // 
@@ -490,14 +491,16 @@
             this.Submitbtn.Location = new System.Drawing.Point(397, 650);
             this.Submitbtn.Name = "Submitbtn";
             this.Submitbtn.Size = new System.Drawing.Size(75, 23);
-            this.Submitbtn.TabIndex = 23;
+            this.Submitbtn.TabIndex = 25;
             this.Submitbtn.Text = "&Submit";
             this.Submitbtn.UseVisualStyleBackColor = true;
             // 
             // NewUserForm
             // 
+            this.AcceptButton = this.Submitbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.Cancelbtn;
             this.ClientSize = new System.Drawing.Size(523, 683);
             this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.Clearbtn);

@@ -75,7 +75,6 @@
             this.Usernametxt.Name = "Usernametxt";
             this.Usernametxt.Size = new System.Drawing.Size(189, 20);
             this.Usernametxt.TabIndex = 1;
-            this.Usernametxt.TabStop = false;
             // 
             // Passwordtxt
             // 
@@ -86,6 +85,7 @@
             // 
             // Cancelbtn
             // 
+            this.Cancelbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Cancelbtn.Location = new System.Drawing.Point(69, 117);
             this.Cancelbtn.Name = "Cancelbtn";
             this.Cancelbtn.Size = new System.Drawing.Size(75, 23);
@@ -125,8 +125,10 @@
             // 
             // LoginForm
             // 
+            this.AcceptButton = this.Loginbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.Cancelbtn;
             this.ClientSize = new System.Drawing.Size(350, 178);
             this.Controls.Add(this.Forgotlnk);
             this.Controls.Add(this.Createlbl);

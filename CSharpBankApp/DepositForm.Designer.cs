@@ -117,6 +117,7 @@
             // 
             // Cancelbtn
             // 
+            this.Cancelbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Cancelbtn.Location = new System.Drawing.Point(45, 140);
             this.Cancelbtn.Name = "Cancelbtn";
             this.Cancelbtn.Size = new System.Drawing.Size(75, 23);
@@ -131,7 +132,7 @@
             this.VerifyPintxt.Name = "VerifyPintxt";
             this.VerifyPintxt.PasswordChar = '*';
             this.VerifyPintxt.Size = new System.Drawing.Size(113, 20);
-            this.VerifyPintxt.TabIndex = 11;
+            this.VerifyPintxt.TabIndex = 4;
             // 
             // VerifyPinlbl
             // 
@@ -146,11 +147,11 @@
             // Pintxt
             // 
             this.Pintxt.Location = new System.Drawing.Point(84, 89);
-            this.Pintxt.MaxLength = 3;
+            this.Pintxt.MaxLength = 4;
             this.Pintxt.Name = "Pintxt";
             this.Pintxt.PasswordChar = '*';
             this.Pintxt.Size = new System.Drawing.Size(113, 20);
-            this.Pintxt.TabIndex = 10;
+            this.Pintxt.TabIndex = 3;
             // 
             // Pinlbl
             // 
@@ -164,8 +165,10 @@
             // 
             // DepositForm
             // 
+            this.AcceptButton = this.Submitbtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.Cancelbtn;
             this.ClientSize = new System.Drawing.Size(465, 187);
             this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.Clearbtn);
