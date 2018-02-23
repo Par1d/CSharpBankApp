@@ -34,7 +34,20 @@ namespace BankClassLibrary
 
         public void Deposit(decimal amount)
         {
+
             _balance += amount;
+        }
+
+        public void Withdraw(decimal amount)
+        {
+            if (amount > _balance)
+            {
+                //throw custom insufficient funds exception
+            }
+            else
+            {
+                _balance -= _balance;
+            }
         }
     }
 }
