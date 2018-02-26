@@ -21,5 +21,10 @@ namespace CSharpBankApp
         {
             new LoginForm().Show();
         }
+
+        private void Withdrawbtn_Click(object sender, EventArgs e)
+        {
+            Withdrawpnl.Show();
+        }
     }
 }
