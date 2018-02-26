@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,4 +32,20 @@ namespace BankClassLibrary
         public int AccountID { get { return _accountID; } }
         public TransactionType Type { get { return _type; } }
     }
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace BankClassLibrary
+{
+    public class Transaction
+    {
+        private DateTime _date;
+        private decimal _amount;
+        private int _accountID;
+        private int _customerID;
+    }
+>>>>>>> 48e962295adc0a7b268eba54d217f27b1c81bd05
 }
