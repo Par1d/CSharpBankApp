@@ -26,3 +26,10 @@ C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\obj\Deb
 C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.dll
 C:\Users\parke\Documents\_C Sharp Project\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.pdb
+C:\Users\C Sharp.B056\source\repos\CSharpBankApp\BankClassLibrary\bin\Debug\BankClassLibrary.dll
+C:\Users\C Sharp.B056\source\repos\CSharpBankApp\BankClassLibrary\bin\Debug\BankClassLibrary.pdb
+C:\Users\C Sharp.B056\source\repos\CSharpBankApp\BankClassLibrary\bin\Debug\MoneyLIb.dll
+C:\Users\C Sharp.B056\source\repos\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\C Sharp.B056\source\repos\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\C Sharp.B056\source\repos\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.dll
+C:\Users\C Sharp.B056\source\repos\CSharpBankApp\BankClassLibrary\obj\Debug\BankClassLibrary.pdb
