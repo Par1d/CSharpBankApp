@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BankClassLibrary;
 
+
 namespace TestConsole
 {
     class Program
@@ -15,7 +16,7 @@ namespace TestConsole
             Customer bob = bank.CreateCustomer("bobby");
             Account myAccount = bank.OpenAccount(bob, 1234, 1234, "MyChecking", 500m);
 
-            Console.WriteLine(bob.UserAccount.Balance);
+            //Console.WriteLine(bob.customer.Balance);
             
             Console.ReadKey();
 

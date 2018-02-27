@@ -17,5 +17,7 @@ namespace BankClassLibrary
         //Remvove money
         //Get total
         //Get amount of each denomination
+
+        
     }
 }
