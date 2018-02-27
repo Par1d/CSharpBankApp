@@ -92,6 +92,7 @@
             this.Cancelbtn.TabIndex = 3;
             this.Cancelbtn.Text = "&Cancel";
             this.Cancelbtn.UseVisualStyleBackColor = true;
+            this.Cancelbtn.Click += new System.EventHandler(this.Cancelbtn_Click);
             // 
             // Loginbtn
             // 
