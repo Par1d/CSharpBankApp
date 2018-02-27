@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace BankClassLibrary
 {
+    public class InsufficientFundsException : Exception
+    {
+
+    }
+
     public class Account
     {
         private int _accountID;
@@ -14,27 +19,25 @@ namespace BankClassLibrary
         private decimal _balance;
         List<Transaction> _history;
 
-        public decimal Balance
-        {
-            get
-            {
-                return _balance;
-            }
-        }
-
         public Account(int accountID, int PIN, string accountName, decimal balance = 0)
         {
             _accountID = accountID;
             _pin = PIN;
             _name = accountName;
             _balance = balance;
+            _history = new List<Transaction>();
         }
 
-
+        public int AccountID { get { return _accountID; } }
+        public int Pin { get { return _pin; } }
+        public string Name { get { return _name; } }
+        public decimal Balance { get { return _balance; } }
+        public List<Transaction> History { get { return _history; } }
 
         public void Deposit(decimal amount)
         {
-
+            Transaction transaction = new Transaction(amount, _accountID, TransactionType.Deposit);
+            _history.Add(transaction);
             _balance += amount;
         }
 
@@ -42,11 +45,23 @@ namespace BankClassLibrary
         {
             if (amount > _balance)
             {
-                //throw custom insufficient funds exception
+                throw new InsufficientFundsException();
             }
             else
             {
-                _balance -= _balance;
+                Transaction transaction = new Transaction(amount, _accountID, TransactionType.Withdrawal);
+                _history.Add(transaction);
+                _balance -= amount;
+            }
+        }
+
+        public void DisplayHistory()
+        {
+            Console.WriteLine("{0}{1}{2}{3}", "Type:".PadRight(15), "Account:".PadRight(15), "Amount:".PadRight(15), "Date:");
+            foreach (Transaction i in _history)
+            {
+                Console.WriteLine("{0}{1}{2}{3}", i.Type.ToString().PadRight(15),
+                    i.AccountID.ToString().PadRight(15), i.Amount.ToString("c").PadRight(15), i.Date);
             }
         }
     }

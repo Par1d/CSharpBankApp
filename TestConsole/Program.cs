@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using BankClassLibrary;
+using System.Timers;
 
 namespace TestConsole
 {
@@ -13,13 +15,11 @@ namespace TestConsole
         {
             Bank bank = new Bank();
             Customer bob = bank.CreateCustomer("bobby");
-            Account myAccount = bank.OpenAccount(bob, 1234, 1234, "MyChecking", 500m);
+            Account bobAcct1 = bank.OpenAccount(bob, 1234, 1234, "My Checking", 200m);
+            Account bobAcct2 = bank.OpenAccount(bob, 1222, 1222, "My Savings", 100m);
 
-            Console.WriteLine(bob.UserAccount.Balance);
+            Console.WriteLine(bob.TotalOfAllAccounts.ToString("c"));
             
-            Console.ReadKey();
-
-            Console.WriteLine();//added ;
         }
     }
 }
