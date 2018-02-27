@@ -29,22 +29,10 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.Closebtn = new System.Windows.Forms.Button();
             this.Depositbtn = new System.Windows.Forms.Button();
             this.Withdrawbtn = new System.Windows.Forms.Button();
-            this.Withdrawpnl = new System.Windows.Forms.Panel();
-            this.WithdrawSubmitbtn = new System.Windows.Forms.Button();
-            this.WtihdrawClearbtn = new System.Windows.Forms.Button();
-            this.WithdrawCancelbtn = new System.Windows.Forms.Button();
-            this.WithdrawPinVerifytxt = new System.Windows.Forms.TextBox();
-            this.WithdrawPinVerifylbl = new System.Windows.Forms.Label();
-            this.WithdrawPintxt = new System.Windows.Forms.TextBox();
-            this.WithdrawPinlbl = new System.Windows.Forms.Label();
-            this.WithdrawAmountVerifytxt = new System.Windows.Forms.TextBox();
-            this.WithdrawAmountVerifylbl = new System.Windows.Forms.Label();
-            this.Withdrawsecondary = new System.Windows.Forms.Label();
-            this.WithdrawAmounttxt = new System.Windows.Forms.TextBox();
-            this.WithdrawAmountlbl = new System.Windows.Forms.Label();
-            this.WithdrawMain = new System.Windows.Forms.Label();
+            this.Mainlbl = new System.Windows.Forms.Label();
             this.Depositpnl = new System.Windows.Forms.Panel();
             this.DepositSubmitbtn = new System.Windows.Forms.Button();
             this.DepositClearbtn = new System.Windows.Forms.Button();
@@ -59,14 +47,26 @@
             this.DepositAmounttxt = new System.Windows.Forms.TextBox();
             this.Depositsecondary = new System.Windows.Forms.Label();
             this.Depositmain = new System.Windows.Forms.Label();
-            this.Mainlbl = new System.Windows.Forms.Label();
-            this.Closebtn = new System.Windows.Forms.Button();
+            this.Withdrawpnl = new System.Windows.Forms.Panel();
+            this.WithdrawSubmitbtn = new System.Windows.Forms.Button();
+            this.WtihdrawClearbtn = new System.Windows.Forms.Button();
+            this.WithdrawCancelbtn = new System.Windows.Forms.Button();
+            this.WithdrawPinVerifytxt = new System.Windows.Forms.TextBox();
+            this.WithdrawPinVerifylbl = new System.Windows.Forms.Label();
+            this.WithdrawPintxt = new System.Windows.Forms.TextBox();
+            this.WithdrawPinlbl = new System.Windows.Forms.Label();
+            this.WithdrawAmountVerifytxt = new System.Windows.Forms.TextBox();
+            this.WithdrawAmountVerifylbl = new System.Windows.Forms.Label();
+            this.Withdrawsecondary = new System.Windows.Forms.Label();
+            this.WithdrawAmounttxt = new System.Windows.Forms.TextBox();
+            this.WithdrawAmountlbl = new System.Windows.Forms.Label();
+            this.WithdrawMain = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.Withdrawpnl.SuspendLayout();
             this.Depositpnl.SuspendLayout();
+            this.Withdrawpnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -86,10 +86,19 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.Mainlbl);
             this.splitContainer1.Panel2.Controls.Add(this.Depositpnl);
-            this.splitContainer1.Panel2.Controls.Add(this.Withdrawpnl);
             this.splitContainer1.Size = new System.Drawing.Size(669, 273);
             this.splitContainer1.SplitterDistance = 156;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // Closebtn
+            // 
+            this.Closebtn.Location = new System.Drawing.Point(36, 225);
+            this.Closebtn.Name = "Closebtn";
+            this.Closebtn.Size = new System.Drawing.Size(75, 23);
+            this.Closebtn.TabIndex = 3;
+            this.Closebtn.Text = "Close";
+            this.Closebtn.UseVisualStyleBackColor = true;
+            this.Closebtn.Click += new System.EventHandler(this.Closebtn_Click);
             // 
             // Depositbtn
             // 
@@ -111,151 +120,22 @@
             this.Withdrawbtn.UseVisualStyleBackColor = true;
             this.Withdrawbtn.Click += new System.EventHandler(this.Withdrawbtn_Click);
             // 
-            // Withdrawpnl
+            // Mainlbl
             // 
-            this.Withdrawpnl.Controls.Add(this.WithdrawSubmitbtn);
-            this.Withdrawpnl.Controls.Add(this.WtihdrawClearbtn);
-            this.Withdrawpnl.Controls.Add(this.WithdrawCancelbtn);
-            this.Withdrawpnl.Controls.Add(this.WithdrawPinVerifytxt);
-            this.Withdrawpnl.Controls.Add(this.WithdrawPinVerifylbl);
-            this.Withdrawpnl.Controls.Add(this.WithdrawPintxt);
-            this.Withdrawpnl.Controls.Add(this.WithdrawPinlbl);
-            this.Withdrawpnl.Controls.Add(this.WithdrawAmountVerifytxt);
-            this.Withdrawpnl.Controls.Add(this.WithdrawAmountVerifylbl);
-            this.Withdrawpnl.Controls.Add(this.Withdrawsecondary);
-            this.Withdrawpnl.Controls.Add(this.WithdrawAmounttxt);
-            this.Withdrawpnl.Controls.Add(this.WithdrawAmountlbl);
-            this.Withdrawpnl.Controls.Add(this.WithdrawMain);
-            this.Withdrawpnl.Location = new System.Drawing.Point(16, 45);
-            this.Withdrawpnl.Name = "Withdrawpnl";
-            this.Withdrawpnl.Size = new System.Drawing.Size(481, 203);
-            this.Withdrawpnl.TabIndex = 0;
-            this.Withdrawpnl.Visible = false;
-            // 
-            // WithdrawSubmitbtn
-            // 
-            this.WithdrawSubmitbtn.Location = new System.Drawing.Point(348, 167);
-            this.WithdrawSubmitbtn.Name = "WithdrawSubmitbtn";
-            this.WithdrawSubmitbtn.Size = new System.Drawing.Size(75, 23);
-            this.WithdrawSubmitbtn.TabIndex = 7;
-            this.WithdrawSubmitbtn.Text = "&Submit";
-            this.WithdrawSubmitbtn.UseVisualStyleBackColor = true;
-            // 
-            // WtihdrawClearbtn
-            // 
-            this.WtihdrawClearbtn.Location = new System.Drawing.Point(204, 167);
-            this.WtihdrawClearbtn.Name = "WtihdrawClearbtn";
-            this.WtihdrawClearbtn.Size = new System.Drawing.Size(75, 23);
-            this.WtihdrawClearbtn.TabIndex = 6;
-            this.WtihdrawClearbtn.Text = "Clea&r";
-            this.WtihdrawClearbtn.UseVisualStyleBackColor = true;
-            // 
-            // WithdrawCancelbtn
-            // 
-            this.WithdrawCancelbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.WithdrawCancelbtn.Location = new System.Drawing.Point(55, 167);
-            this.WithdrawCancelbtn.Name = "WithdrawCancelbtn";
-            this.WithdrawCancelbtn.Size = new System.Drawing.Size(75, 23);
-            this.WithdrawCancelbtn.TabIndex = 5;
-            this.WithdrawCancelbtn.Text = "&Cancel";
-            this.WithdrawCancelbtn.UseVisualStyleBackColor = true;
-            // 
-            // WithdrawPinVerifytxt
-            // 
-            this.WithdrawPinVerifytxt.Location = new System.Drawing.Point(329, 116);
-            this.WithdrawPinVerifytxt.MaxLength = 4;
-            this.WithdrawPinVerifytxt.Name = "WithdrawPinVerifytxt";
-            this.WithdrawPinVerifytxt.PasswordChar = '*';
-            this.WithdrawPinVerifytxt.Size = new System.Drawing.Size(113, 20);
-            this.WithdrawPinVerifytxt.TabIndex = 4;
-            // 
-            // WithdrawPinVerifylbl
-            // 
-            this.WithdrawPinVerifylbl.AutoSize = true;
-            this.WithdrawPinVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WithdrawPinVerifylbl.Location = new System.Drawing.Point(251, 123);
-            this.WithdrawPinVerifylbl.Name = "WithdrawPinVerifylbl";
-            this.WithdrawPinVerifylbl.Size = new System.Drawing.Size(72, 13);
-            this.WithdrawPinVerifylbl.TabIndex = 0;
-            this.WithdrawPinVerifylbl.Text = "Verify PIN :";
-            // 
-            // WithdrawPintxt
-            // 
-            this.WithdrawPintxt.Location = new System.Drawing.Point(94, 116);
-            this.WithdrawPintxt.MaxLength = 4;
-            this.WithdrawPintxt.Name = "WithdrawPintxt";
-            this.WithdrawPintxt.PasswordChar = '*';
-            this.WithdrawPintxt.Size = new System.Drawing.Size(113, 20);
-            this.WithdrawPintxt.TabIndex = 2;
-            // 
-            // WithdrawPinlbl
-            // 
-            this.WithdrawPinlbl.AutoSize = true;
-            this.WithdrawPinlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WithdrawPinlbl.Location = new System.Drawing.Point(52, 123);
-            this.WithdrawPinlbl.Name = "WithdrawPinlbl";
-            this.WithdrawPinlbl.Size = new System.Drawing.Size(36, 13);
-            this.WithdrawPinlbl.TabIndex = 0;
-            this.WithdrawPinlbl.Text = "PIN :";
-            // 
-            // WithdrawAmountVerifytxt
-            // 
-            this.WithdrawAmountVerifytxt.Location = new System.Drawing.Point(329, 75);
-            this.WithdrawAmountVerifytxt.Name = "WithdrawAmountVerifytxt";
-            this.WithdrawAmountVerifytxt.Size = new System.Drawing.Size(113, 20);
-            this.WithdrawAmountVerifytxt.TabIndex = 3;
-            // 
-            // WithdrawAmountVerifylbl
-            // 
-            this.WithdrawAmountVerifylbl.AutoSize = true;
-            this.WithdrawAmountVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WithdrawAmountVerifylbl.Location = new System.Drawing.Point(230, 82);
-            this.WithdrawAmountVerifylbl.Name = "WithdrawAmountVerifylbl";
-            this.WithdrawAmountVerifylbl.Size = new System.Drawing.Size(93, 13);
-            this.WithdrawAmountVerifylbl.TabIndex = 0;
-            this.WithdrawAmountVerifylbl.Text = "Verify Amount :";
-            // 
-            // Withdrawsecondary
-            // 
-            this.Withdrawsecondary.AutoSize = true;
-            this.Withdrawsecondary.Location = new System.Drawing.Point(101, 49);
-            this.Withdrawsecondary.Name = "Withdrawsecondary";
-            this.Withdrawsecondary.Size = new System.Drawing.Size(283, 13);
-            this.Withdrawsecondary.TabIndex = 0;
-            this.Withdrawsecondary.Text = "Please Do Not Include The $ When Entering Your Amount";
-            // 
-            // WithdrawAmounttxt
-            // 
-            this.WithdrawAmounttxt.Location = new System.Drawing.Point(94, 75);
-            this.WithdrawAmounttxt.Name = "WithdrawAmounttxt";
-            this.WithdrawAmounttxt.Size = new System.Drawing.Size(113, 20);
-            this.WithdrawAmounttxt.TabIndex = 1;
-            // 
-            // WithdrawAmountlbl
-            // 
-            this.WithdrawAmountlbl.AutoSize = true;
-            this.WithdrawAmountlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WithdrawAmountlbl.Location = new System.Drawing.Point(31, 82);
-            this.WithdrawAmountlbl.Name = "WithdrawAmountlbl";
-            this.WithdrawAmountlbl.Size = new System.Drawing.Size(57, 13);
-            this.WithdrawAmountlbl.TabIndex = 0;
-            this.WithdrawAmountlbl.Text = "Amount :";
-            // 
-            // WithdrawMain
-            // 
-            this.WithdrawMain.AutoSize = true;
-            this.WithdrawMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WithdrawMain.Location = new System.Drawing.Point(31, 36);
-            this.WithdrawMain.Name = "WithdrawMain";
-            this.WithdrawMain.Size = new System.Drawing.Size(418, 13);
-            this.WithdrawMain.TabIndex = 0;
-            this.WithdrawMain.Text = "Please Enter The Amount You Wish To Withdraw And Provide Your Pin For Verificatio" +
-    "n";
+            this.Mainlbl.AutoSize = true;
+            this.Mainlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mainlbl.Location = new System.Drawing.Point(23, 7);
+            this.Mainlbl.Name = "Mainlbl";
+            this.Mainlbl.Size = new System.Drawing.Size(472, 17);
+            this.Mainlbl.TabIndex = 0;
+            this.Mainlbl.Text = "Please Verify The Form You Are On Before Entering Information";
+            this.Mainlbl.Visible = false;
             // 
             // Depositpnl
             // 
             this.Depositpnl.Controls.Add(this.DepositSubmitbtn);
             this.Depositpnl.Controls.Add(this.DepositClearbtn);
+            this.Depositpnl.Controls.Add(this.Withdrawpnl);
             this.Depositpnl.Controls.Add(this.DepositCancelbtn);
             this.Depositpnl.Controls.Add(this.DepositPinVerifytxt);
             this.Depositpnl.Controls.Add(this.DepositPinVerifylbl);
@@ -267,7 +147,7 @@
             this.Depositpnl.Controls.Add(this.DepositAmounttxt);
             this.Depositpnl.Controls.Add(this.Depositsecondary);
             this.Depositpnl.Controls.Add(this.Depositmain);
-            this.Depositpnl.Location = new System.Drawing.Point(16, 45);
+            this.Depositpnl.Location = new System.Drawing.Point(18, 45);
             this.Depositpnl.Name = "Depositpnl";
             this.Depositpnl.Size = new System.Drawing.Size(481, 203);
             this.Depositpnl.TabIndex = 0;
@@ -290,6 +170,7 @@
             this.DepositClearbtn.TabIndex = 6;
             this.DepositClearbtn.Text = "Clea&r";
             this.DepositClearbtn.UseVisualStyleBackColor = true;
+            this.DepositClearbtn.Click += new System.EventHandler(this.DepositClearbtn_Click);
             // 
             // DepositCancelbtn
             // 
@@ -300,6 +181,7 @@
             this.DepositCancelbtn.TabIndex = 5;
             this.DepositCancelbtn.Text = "&Cancel";
             this.DepositCancelbtn.UseVisualStyleBackColor = true;
+            this.DepositCancelbtn.Click += new System.EventHandler(this.DepositCancelbtn_Click);
             // 
             // DepositPinVerifytxt
             // 
@@ -393,26 +275,148 @@
             this.Depositmain.Text = "Please Enter The Amount You Wish To Deposit And Provide Your Pin For Verification" +
     "";
             // 
-            // Mainlbl
+            // Withdrawpnl
             // 
-            this.Mainlbl.AutoSize = true;
-            this.Mainlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mainlbl.Location = new System.Drawing.Point(23, 7);
-            this.Mainlbl.Name = "Mainlbl";
-            this.Mainlbl.Size = new System.Drawing.Size(472, 17);
-            this.Mainlbl.TabIndex = 0;
-            this.Mainlbl.Text = "Please Verify The Form You Are On Before Entering Information";
-            this.Mainlbl.Visible = false;
+            this.Withdrawpnl.Controls.Add(this.WithdrawSubmitbtn);
+            this.Withdrawpnl.Controls.Add(this.WtihdrawClearbtn);
+            this.Withdrawpnl.Controls.Add(this.WithdrawCancelbtn);
+            this.Withdrawpnl.Controls.Add(this.WithdrawPinVerifytxt);
+            this.Withdrawpnl.Controls.Add(this.WithdrawPinVerifylbl);
+            this.Withdrawpnl.Controls.Add(this.WithdrawPintxt);
+            this.Withdrawpnl.Controls.Add(this.WithdrawPinlbl);
+            this.Withdrawpnl.Controls.Add(this.WithdrawAmountVerifytxt);
+            this.Withdrawpnl.Controls.Add(this.WithdrawAmountVerifylbl);
+            this.Withdrawpnl.Controls.Add(this.Withdrawsecondary);
+            this.Withdrawpnl.Controls.Add(this.WithdrawAmounttxt);
+            this.Withdrawpnl.Controls.Add(this.WithdrawAmountlbl);
+            this.Withdrawpnl.Controls.Add(this.WithdrawMain);
+            this.Withdrawpnl.Location = new System.Drawing.Point(0, 0);
+            this.Withdrawpnl.Name = "Withdrawpnl";
+            this.Withdrawpnl.Size = new System.Drawing.Size(481, 203);
+            this.Withdrawpnl.TabIndex = 0;
+            this.Withdrawpnl.Visible = false;
             // 
-            // Closebtn
+            // WithdrawSubmitbtn
             // 
-            this.Closebtn.Location = new System.Drawing.Point(36, 225);
-            this.Closebtn.Name = "Closebtn";
-            this.Closebtn.Size = new System.Drawing.Size(75, 23);
-            this.Closebtn.TabIndex = 3;
-            this.Closebtn.Text = "Close";
-            this.Closebtn.UseVisualStyleBackColor = true;
-            this.Closebtn.Click += new System.EventHandler(this.Closebtn_Click);
+            this.WithdrawSubmitbtn.Location = new System.Drawing.Point(348, 167);
+            this.WithdrawSubmitbtn.Name = "WithdrawSubmitbtn";
+            this.WithdrawSubmitbtn.Size = new System.Drawing.Size(75, 23);
+            this.WithdrawSubmitbtn.TabIndex = 7;
+            this.WithdrawSubmitbtn.Text = "&Submit";
+            this.WithdrawSubmitbtn.UseVisualStyleBackColor = true;
+            // 
+            // WtihdrawClearbtn
+            // 
+            this.WtihdrawClearbtn.Location = new System.Drawing.Point(204, 167);
+            this.WtihdrawClearbtn.Name = "WtihdrawClearbtn";
+            this.WtihdrawClearbtn.Size = new System.Drawing.Size(75, 23);
+            this.WtihdrawClearbtn.TabIndex = 6;
+            this.WtihdrawClearbtn.Text = "Clea&r";
+            this.WtihdrawClearbtn.UseVisualStyleBackColor = true;
+            this.WtihdrawClearbtn.Click += new System.EventHandler(this.WtihdrawClearbtn_Click);
+            // 
+            // WithdrawCancelbtn
+            // 
+            this.WithdrawCancelbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.WithdrawCancelbtn.Location = new System.Drawing.Point(55, 167);
+            this.WithdrawCancelbtn.Name = "WithdrawCancelbtn";
+            this.WithdrawCancelbtn.Size = new System.Drawing.Size(75, 23);
+            this.WithdrawCancelbtn.TabIndex = 5;
+            this.WithdrawCancelbtn.Text = "&Cancel";
+            this.WithdrawCancelbtn.UseVisualStyleBackColor = true;
+            this.WithdrawCancelbtn.Click += new System.EventHandler(this.WithdrawCancelbtn_Click);
+            // 
+            // WithdrawPinVerifytxt
+            // 
+            this.WithdrawPinVerifytxt.Location = new System.Drawing.Point(329, 116);
+            this.WithdrawPinVerifytxt.MaxLength = 4;
+            this.WithdrawPinVerifytxt.Name = "WithdrawPinVerifytxt";
+            this.WithdrawPinVerifytxt.PasswordChar = '*';
+            this.WithdrawPinVerifytxt.Size = new System.Drawing.Size(113, 20);
+            this.WithdrawPinVerifytxt.TabIndex = 4;
+            // 
+            // WithdrawPinVerifylbl
+            // 
+            this.WithdrawPinVerifylbl.AutoSize = true;
+            this.WithdrawPinVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WithdrawPinVerifylbl.Location = new System.Drawing.Point(251, 123);
+            this.WithdrawPinVerifylbl.Name = "WithdrawPinVerifylbl";
+            this.WithdrawPinVerifylbl.Size = new System.Drawing.Size(72, 13);
+            this.WithdrawPinVerifylbl.TabIndex = 0;
+            this.WithdrawPinVerifylbl.Text = "Verify PIN :";
+            // 
+            // WithdrawPintxt
+            // 
+            this.WithdrawPintxt.Location = new System.Drawing.Point(94, 116);
+            this.WithdrawPintxt.MaxLength = 4;
+            this.WithdrawPintxt.Name = "WithdrawPintxt";
+            this.WithdrawPintxt.PasswordChar = '*';
+            this.WithdrawPintxt.Size = new System.Drawing.Size(113, 20);
+            this.WithdrawPintxt.TabIndex = 2;
+            // 
+            // WithdrawPinlbl
+            // 
+            this.WithdrawPinlbl.AutoSize = true;
+            this.WithdrawPinlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WithdrawPinlbl.Location = new System.Drawing.Point(52, 123);
+            this.WithdrawPinlbl.Name = "WithdrawPinlbl";
+            this.WithdrawPinlbl.Size = new System.Drawing.Size(36, 13);
+            this.WithdrawPinlbl.TabIndex = 0;
+            this.WithdrawPinlbl.Text = "PIN :";
+            // 
+            // WithdrawAmountVerifytxt
+            // 
+            this.WithdrawAmountVerifytxt.Location = new System.Drawing.Point(329, 75);
+            this.WithdrawAmountVerifytxt.Name = "WithdrawAmountVerifytxt";
+            this.WithdrawAmountVerifytxt.Size = new System.Drawing.Size(113, 20);
+            this.WithdrawAmountVerifytxt.TabIndex = 3;
+            // 
+            // WithdrawAmountVerifylbl
+            // 
+            this.WithdrawAmountVerifylbl.AutoSize = true;
+            this.WithdrawAmountVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WithdrawAmountVerifylbl.Location = new System.Drawing.Point(230, 82);
+            this.WithdrawAmountVerifylbl.Name = "WithdrawAmountVerifylbl";
+            this.WithdrawAmountVerifylbl.Size = new System.Drawing.Size(93, 13);
+            this.WithdrawAmountVerifylbl.TabIndex = 0;
+            this.WithdrawAmountVerifylbl.Text = "Verify Amount :";
+            // 
+            // Withdrawsecondary
+            // 
+            this.Withdrawsecondary.AutoSize = true;
+            this.Withdrawsecondary.Location = new System.Drawing.Point(101, 49);
+            this.Withdrawsecondary.Name = "Withdrawsecondary";
+            this.Withdrawsecondary.Size = new System.Drawing.Size(283, 13);
+            this.Withdrawsecondary.TabIndex = 0;
+            this.Withdrawsecondary.Text = "Please Do Not Include The $ When Entering Your Amount";
+            // 
+            // WithdrawAmounttxt
+            // 
+            this.WithdrawAmounttxt.Location = new System.Drawing.Point(94, 75);
+            this.WithdrawAmounttxt.Name = "WithdrawAmounttxt";
+            this.WithdrawAmounttxt.Size = new System.Drawing.Size(113, 20);
+            this.WithdrawAmounttxt.TabIndex = 1;
+            // 
+            // WithdrawAmountlbl
+            // 
+            this.WithdrawAmountlbl.AutoSize = true;
+            this.WithdrawAmountlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WithdrawAmountlbl.Location = new System.Drawing.Point(31, 82);
+            this.WithdrawAmountlbl.Name = "WithdrawAmountlbl";
+            this.WithdrawAmountlbl.Size = new System.Drawing.Size(57, 13);
+            this.WithdrawAmountlbl.TabIndex = 0;
+            this.WithdrawAmountlbl.Text = "Amount :";
+            // 
+            // WithdrawMain
+            // 
+            this.WithdrawMain.AutoSize = true;
+            this.WithdrawMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WithdrawMain.Location = new System.Drawing.Point(31, 36);
+            this.WithdrawMain.Name = "WithdrawMain";
+            this.WithdrawMain.Size = new System.Drawing.Size(418, 13);
+            this.WithdrawMain.TabIndex = 0;
+            this.WithdrawMain.Text = "Please Enter The Amount You Wish To Withdraw And Provide Your Pin For Verificatio" +
+    "n";
             // 
             // Dashboard
             // 
@@ -429,10 +433,10 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.Withdrawpnl.ResumeLayout(false);
-            this.Withdrawpnl.PerformLayout();
             this.Depositpnl.ResumeLayout(false);
             this.Depositpnl.PerformLayout();
+            this.Withdrawpnl.ResumeLayout(false);
+            this.Withdrawpnl.PerformLayout();
             this.ResumeLayout(false);
 
         }
