@@ -25,6 +25,20 @@ namespace CSharpBankApp
         private void Withdrawbtn_Click(object sender, EventArgs e)
         {
             Withdrawpnl.Show();
+            Mainlbl.Show();
+            Depositpnl.Hide();
+        }
+
+        private void Depositbtn_Click(object sender, EventArgs e)
+        {
+            Depositpnl.Show();
+            Mainlbl.Show();
+            Withdrawpnl.Hide();
+        }
+
+        private void Closebtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
