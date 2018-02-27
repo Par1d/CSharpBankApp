@@ -10,7 +10,7 @@ namespace BankClassLibrary
         Vault _vault;
         ATM _atm;
         Teller _teller;
-        List<Account> _accounts;
+        Dictionary<int, Account> _accounts;
         List<Customer> _customers;
 
         public Bank()
@@ -18,7 +18,7 @@ namespace BankClassLibrary
             _vault = new Vault();
             _atm = new ATM();
             _teller = new Teller();
-            _accounts = new List<Account>();
+            _accounts = new Dictionary<int, Account>();
             _customers = new List<Customer>();
         }
 
@@ -31,20 +31,11 @@ namespace BankClassLibrary
 
         public Account OpenAccount(Customer cst, int accountID, int PIN, string accountName, decimal depositAmount)
         {
-            if (depositAmount < 25)
-            {
-                //Snarky comment
-                return null;
-            }
-            else
-            {
-                Account acct = new Account(accountID, PIN, accountName, depositAmount);
-                _accounts.Add(acct);
-                cst.UserAccount = acct;
+            Account acct = new Account(accountID, PIN, accountName, depositAmount);
+            _accounts.Add(accountID, acct);
+            cst.Accounts.Add(acct);
 
-                return acct;
-            }
-
+            return acct;
 
         }
 

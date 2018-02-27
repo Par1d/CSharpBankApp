@@ -8,25 +8,42 @@ namespace BankClassLibrary
     public class Customer
     {
         private string _username;
-        private Account _account;
+        private List<Account> _accounts;
 
-        public Account UserAccount
+        public List<Account> Accounts
         {
             get
             {
-                return _account;
+                return _accounts;
             }
             set
             {
-                _account = value;
+                _accounts = value;
             }
         }
+
+        public decimal TotalOfAllAccounts
+        {
+            get
+            {
+                decimal total = 0m;
+                foreach (Account acct in _accounts)
+                {
+                    total += acct.Balance;
+                }
+
+                return total;
+            }
+        }
+
 
         public Customer(string username)
         {
             _username = username;
+            _accounts = new List<Account>();
         }
 
+        
         public void DisplayAccounts()
         {
             throw new System.NotImplementedException();
