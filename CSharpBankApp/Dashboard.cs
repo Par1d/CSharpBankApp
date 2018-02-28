@@ -20,6 +20,9 @@ namespace CSharpBankApp
         private void Dashboard_Load(object sender, EventArgs e)
         {
             new LoginForm().Show();
+            dashboardpnl.Show();
+            Withdrawpnl.Hide();
+            Depositpnl.Hide();
         }
 
 
@@ -29,6 +32,7 @@ namespace CSharpBankApp
             Depositpnl.Show();
             Mainlbl.Show();
             Withdrawpnl.Hide();
+            dashboardpnl.Hide();
         }
 
         /// Hides the Deposit Panel and Shows the Withdraw Panel
@@ -37,6 +41,7 @@ namespace CSharpBankApp
             Withdrawpnl.Show();
             Mainlbl.Show();
             Depositpnl.Hide();
+            dashboardpnl.Hide();
         }
 
         private void Closebtn_Click(object sender, EventArgs e)
@@ -48,12 +53,14 @@ namespace CSharpBankApp
         {
             Depositpnl.Hide();
             Mainlbl.Hide();
+            dashboardpnl.Show();
         }
 
         private void WithdrawCancelbtn_Click(object sender, EventArgs e)
         {
             Withdrawpnl.Hide();
             Mainlbl.Hide();
+            dashboardpnl.Show();
         }
 
         private void DepositClearbtn_Click(object sender, EventArgs e)
@@ -70,6 +77,11 @@ namespace CSharpBankApp
             WithdrawAmountVerifytxt.Clear();
             WithdrawPintxt.Clear();
             WithdrawPinVerifytxt.Clear();
+        }
+
+        private void logoutlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
