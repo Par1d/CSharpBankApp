@@ -9,6 +9,7 @@ namespace BankClassLibrary
     {
         private string _username;
         private List<Account> _accounts;
+        private Bank _currentVendor;
 
         public List<Account> Accounts
         {

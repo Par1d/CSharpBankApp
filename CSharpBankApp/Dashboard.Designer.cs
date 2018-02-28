@@ -36,17 +36,6 @@
             this.Depositpnl = new System.Windows.Forms.Panel();
             this.DepositSubmitbtn = new System.Windows.Forms.Button();
             this.DepositClearbtn = new System.Windows.Forms.Button();
-            this.DepositCancelbtn = new System.Windows.Forms.Button();
-            this.DepositPinVerifytxt = new System.Windows.Forms.TextBox();
-            this.DepositPinVerifylbl = new System.Windows.Forms.Label();
-            this.DepositPintxt = new System.Windows.Forms.TextBox();
-            this.DepositPinlbl = new System.Windows.Forms.Label();
-            this.DepositAmountVerifytxt = new System.Windows.Forms.TextBox();
-            this.DepositAmountVerifylbl = new System.Windows.Forms.Label();
-            this.DepositAmountlbl = new System.Windows.Forms.Label();
-            this.DepositAmounttxt = new System.Windows.Forms.TextBox();
-            this.Depositsecondary = new System.Windows.Forms.Label();
-            this.Depositmain = new System.Windows.Forms.Label();
             this.Withdrawpnl = new System.Windows.Forms.Panel();
             this.WithdrawSubmitbtn = new System.Windows.Forms.Button();
             this.WtihdrawClearbtn = new System.Windows.Forms.Button();
@@ -61,6 +50,17 @@
             this.WithdrawAmounttxt = new System.Windows.Forms.TextBox();
             this.WithdrawAmountlbl = new System.Windows.Forms.Label();
             this.WithdrawMain = new System.Windows.Forms.Label();
+            this.DepositCancelbtn = new System.Windows.Forms.Button();
+            this.DepositPinVerifytxt = new System.Windows.Forms.TextBox();
+            this.DepositPinVerifylbl = new System.Windows.Forms.Label();
+            this.DepositPintxt = new System.Windows.Forms.TextBox();
+            this.DepositPinlbl = new System.Windows.Forms.Label();
+            this.DepositAmountVerifytxt = new System.Windows.Forms.TextBox();
+            this.DepositAmountVerifylbl = new System.Windows.Forms.Label();
+            this.DepositAmountlbl = new System.Windows.Forms.Label();
+            this.DepositAmounttxt = new System.Windows.Forms.TextBox();
+            this.Depositsecondary = new System.Windows.Forms.Label();
+            this.Depositmain = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -86,7 +86,8 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.Mainlbl);
             this.splitContainer1.Panel2.Controls.Add(this.Depositpnl);
-            this.splitContainer1.Size = new System.Drawing.Size(669, 273);
+            this.splitContainer1.Panel2.Controls.Add(this.Withdrawpnl);
+            this.splitContainer1.Size = new System.Drawing.Size(669, 265);
             this.splitContainer1.SplitterDistance = 156;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -135,7 +136,6 @@
             // 
             this.Depositpnl.Controls.Add(this.DepositSubmitbtn);
             this.Depositpnl.Controls.Add(this.DepositClearbtn);
-            this.Depositpnl.Controls.Add(this.Withdrawpnl);
             this.Depositpnl.Controls.Add(this.DepositCancelbtn);
             this.Depositpnl.Controls.Add(this.DepositPinVerifytxt);
             this.Depositpnl.Controls.Add(this.DepositPinVerifylbl);
@@ -147,7 +147,7 @@
             this.Depositpnl.Controls.Add(this.DepositAmounttxt);
             this.Depositpnl.Controls.Add(this.Depositsecondary);
             this.Depositpnl.Controls.Add(this.Depositmain);
-            this.Depositpnl.Location = new System.Drawing.Point(18, 45);
+            this.Depositpnl.Location = new System.Drawing.Point(18, 42);
             this.Depositpnl.Name = "Depositpnl";
             this.Depositpnl.Size = new System.Drawing.Size(481, 203);
             this.Depositpnl.TabIndex = 0;
@@ -172,109 +172,6 @@
             this.DepositClearbtn.UseVisualStyleBackColor = true;
             this.DepositClearbtn.Click += new System.EventHandler(this.DepositClearbtn_Click);
             // 
-            // DepositCancelbtn
-            // 
-            this.DepositCancelbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.DepositCancelbtn.Location = new System.Drawing.Point(55, 167);
-            this.DepositCancelbtn.Name = "DepositCancelbtn";
-            this.DepositCancelbtn.Size = new System.Drawing.Size(75, 23);
-            this.DepositCancelbtn.TabIndex = 5;
-            this.DepositCancelbtn.Text = "&Cancel";
-            this.DepositCancelbtn.UseVisualStyleBackColor = true;
-            this.DepositCancelbtn.Click += new System.EventHandler(this.DepositCancelbtn_Click);
-            // 
-            // DepositPinVerifytxt
-            // 
-            this.DepositPinVerifytxt.Location = new System.Drawing.Point(329, 116);
-            this.DepositPinVerifytxt.MaxLength = 4;
-            this.DepositPinVerifytxt.Name = "DepositPinVerifytxt";
-            this.DepositPinVerifytxt.PasswordChar = '*';
-            this.DepositPinVerifytxt.Size = new System.Drawing.Size(113, 20);
-            this.DepositPinVerifytxt.TabIndex = 4;
-            // 
-            // DepositPinVerifylbl
-            // 
-            this.DepositPinVerifylbl.AutoSize = true;
-            this.DepositPinVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DepositPinVerifylbl.Location = new System.Drawing.Point(251, 123);
-            this.DepositPinVerifylbl.Name = "DepositPinVerifylbl";
-            this.DepositPinVerifylbl.Size = new System.Drawing.Size(72, 13);
-            this.DepositPinVerifylbl.TabIndex = 0;
-            this.DepositPinVerifylbl.Text = "Verify PIN :";
-            // 
-            // DepositPintxt
-            // 
-            this.DepositPintxt.Location = new System.Drawing.Point(94, 116);
-            this.DepositPintxt.MaxLength = 4;
-            this.DepositPintxt.Name = "DepositPintxt";
-            this.DepositPintxt.PasswordChar = '*';
-            this.DepositPintxt.Size = new System.Drawing.Size(113, 20);
-            this.DepositPintxt.TabIndex = 2;
-            // 
-            // DepositPinlbl
-            // 
-            this.DepositPinlbl.AutoSize = true;
-            this.DepositPinlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DepositPinlbl.Location = new System.Drawing.Point(52, 123);
-            this.DepositPinlbl.Name = "DepositPinlbl";
-            this.DepositPinlbl.Size = new System.Drawing.Size(36, 13);
-            this.DepositPinlbl.TabIndex = 0;
-            this.DepositPinlbl.Text = "PIN :";
-            // 
-            // DepositAmountVerifytxt
-            // 
-            this.DepositAmountVerifytxt.Location = new System.Drawing.Point(329, 75);
-            this.DepositAmountVerifytxt.Name = "DepositAmountVerifytxt";
-            this.DepositAmountVerifytxt.Size = new System.Drawing.Size(113, 20);
-            this.DepositAmountVerifytxt.TabIndex = 3;
-            // 
-            // DepositAmountVerifylbl
-            // 
-            this.DepositAmountVerifylbl.AutoSize = true;
-            this.DepositAmountVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DepositAmountVerifylbl.Location = new System.Drawing.Point(230, 82);
-            this.DepositAmountVerifylbl.Name = "DepositAmountVerifylbl";
-            this.DepositAmountVerifylbl.Size = new System.Drawing.Size(93, 13);
-            this.DepositAmountVerifylbl.TabIndex = 0;
-            this.DepositAmountVerifylbl.Text = "Verify Amount :";
-            // 
-            // DepositAmountlbl
-            // 
-            this.DepositAmountlbl.AutoSize = true;
-            this.DepositAmountlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DepositAmountlbl.Location = new System.Drawing.Point(31, 82);
-            this.DepositAmountlbl.Name = "DepositAmountlbl";
-            this.DepositAmountlbl.Size = new System.Drawing.Size(57, 13);
-            this.DepositAmountlbl.TabIndex = 0;
-            this.DepositAmountlbl.Text = "Amount :";
-            // 
-            // DepositAmounttxt
-            // 
-            this.DepositAmounttxt.Location = new System.Drawing.Point(94, 75);
-            this.DepositAmounttxt.Name = "DepositAmounttxt";
-            this.DepositAmounttxt.Size = new System.Drawing.Size(113, 20);
-            this.DepositAmounttxt.TabIndex = 1;
-            // 
-            // Depositsecondary
-            // 
-            this.Depositsecondary.AutoSize = true;
-            this.Depositsecondary.Location = new System.Drawing.Point(101, 49);
-            this.Depositsecondary.Name = "Depositsecondary";
-            this.Depositsecondary.Size = new System.Drawing.Size(283, 13);
-            this.Depositsecondary.TabIndex = 0;
-            this.Depositsecondary.Text = "Please Do Not Include The $ When Entering Your Amount";
-            // 
-            // Depositmain
-            // 
-            this.Depositmain.AutoSize = true;
-            this.Depositmain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Depositmain.Location = new System.Drawing.Point(31, 36);
-            this.Depositmain.Name = "Depositmain";
-            this.Depositmain.Size = new System.Drawing.Size(409, 13);
-            this.Depositmain.TabIndex = 0;
-            this.Depositmain.Text = "Please Enter The Amount You Wish To Deposit And Provide Your Pin For Verification" +
-    "";
-            // 
             // Withdrawpnl
             // 
             this.Withdrawpnl.Controls.Add(this.WithdrawSubmitbtn);
@@ -290,9 +187,9 @@
             this.Withdrawpnl.Controls.Add(this.WithdrawAmounttxt);
             this.Withdrawpnl.Controls.Add(this.WithdrawAmountlbl);
             this.Withdrawpnl.Controls.Add(this.WithdrawMain);
-            this.Withdrawpnl.Location = new System.Drawing.Point(0, 0);
+            this.Withdrawpnl.Location = new System.Drawing.Point(18, 42);
             this.Withdrawpnl.Name = "Withdrawpnl";
-            this.Withdrawpnl.Size = new System.Drawing.Size(481, 203);
+            this.Withdrawpnl.Size = new System.Drawing.Size(481, 205);
             this.Withdrawpnl.TabIndex = 0;
             this.Withdrawpnl.Visible = false;
             // 
@@ -418,11 +315,114 @@
             this.WithdrawMain.Text = "Please Enter The Amount You Wish To Withdraw And Provide Your Pin For Verificatio" +
     "n";
             // 
+            // DepositCancelbtn
+            // 
+            this.DepositCancelbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.DepositCancelbtn.Location = new System.Drawing.Point(55, 167);
+            this.DepositCancelbtn.Name = "DepositCancelbtn";
+            this.DepositCancelbtn.Size = new System.Drawing.Size(75, 23);
+            this.DepositCancelbtn.TabIndex = 5;
+            this.DepositCancelbtn.Text = "&Cancel";
+            this.DepositCancelbtn.UseVisualStyleBackColor = true;
+            this.DepositCancelbtn.Click += new System.EventHandler(this.DepositCancelbtn_Click);
+            // 
+            // DepositPinVerifytxt
+            // 
+            this.DepositPinVerifytxt.Location = new System.Drawing.Point(329, 116);
+            this.DepositPinVerifytxt.MaxLength = 4;
+            this.DepositPinVerifytxt.Name = "DepositPinVerifytxt";
+            this.DepositPinVerifytxt.PasswordChar = '*';
+            this.DepositPinVerifytxt.Size = new System.Drawing.Size(113, 20);
+            this.DepositPinVerifytxt.TabIndex = 4;
+            // 
+            // DepositPinVerifylbl
+            // 
+            this.DepositPinVerifylbl.AutoSize = true;
+            this.DepositPinVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepositPinVerifylbl.Location = new System.Drawing.Point(251, 123);
+            this.DepositPinVerifylbl.Name = "DepositPinVerifylbl";
+            this.DepositPinVerifylbl.Size = new System.Drawing.Size(72, 13);
+            this.DepositPinVerifylbl.TabIndex = 0;
+            this.DepositPinVerifylbl.Text = "Verify PIN :";
+            // 
+            // DepositPintxt
+            // 
+            this.DepositPintxt.Location = new System.Drawing.Point(94, 116);
+            this.DepositPintxt.MaxLength = 4;
+            this.DepositPintxt.Name = "DepositPintxt";
+            this.DepositPintxt.PasswordChar = '*';
+            this.DepositPintxt.Size = new System.Drawing.Size(113, 20);
+            this.DepositPintxt.TabIndex = 2;
+            // 
+            // DepositPinlbl
+            // 
+            this.DepositPinlbl.AutoSize = true;
+            this.DepositPinlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepositPinlbl.Location = new System.Drawing.Point(52, 123);
+            this.DepositPinlbl.Name = "DepositPinlbl";
+            this.DepositPinlbl.Size = new System.Drawing.Size(36, 13);
+            this.DepositPinlbl.TabIndex = 0;
+            this.DepositPinlbl.Text = "PIN :";
+            // 
+            // DepositAmountVerifytxt
+            // 
+            this.DepositAmountVerifytxt.Location = new System.Drawing.Point(329, 75);
+            this.DepositAmountVerifytxt.Name = "DepositAmountVerifytxt";
+            this.DepositAmountVerifytxt.Size = new System.Drawing.Size(113, 20);
+            this.DepositAmountVerifytxt.TabIndex = 3;
+            // 
+            // DepositAmountVerifylbl
+            // 
+            this.DepositAmountVerifylbl.AutoSize = true;
+            this.DepositAmountVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepositAmountVerifylbl.Location = new System.Drawing.Point(230, 82);
+            this.DepositAmountVerifylbl.Name = "DepositAmountVerifylbl";
+            this.DepositAmountVerifylbl.Size = new System.Drawing.Size(93, 13);
+            this.DepositAmountVerifylbl.TabIndex = 0;
+            this.DepositAmountVerifylbl.Text = "Verify Amount :";
+            // 
+            // DepositAmountlbl
+            // 
+            this.DepositAmountlbl.AutoSize = true;
+            this.DepositAmountlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DepositAmountlbl.Location = new System.Drawing.Point(31, 82);
+            this.DepositAmountlbl.Name = "DepositAmountlbl";
+            this.DepositAmountlbl.Size = new System.Drawing.Size(57, 13);
+            this.DepositAmountlbl.TabIndex = 0;
+            this.DepositAmountlbl.Text = "Amount :";
+            // 
+            // DepositAmounttxt
+            // 
+            this.DepositAmounttxt.Location = new System.Drawing.Point(94, 75);
+            this.DepositAmounttxt.Name = "DepositAmounttxt";
+            this.DepositAmounttxt.Size = new System.Drawing.Size(113, 20);
+            this.DepositAmounttxt.TabIndex = 1;
+            // 
+            // Depositsecondary
+            // 
+            this.Depositsecondary.AutoSize = true;
+            this.Depositsecondary.Location = new System.Drawing.Point(101, 49);
+            this.Depositsecondary.Name = "Depositsecondary";
+            this.Depositsecondary.Size = new System.Drawing.Size(283, 13);
+            this.Depositsecondary.TabIndex = 0;
+            this.Depositsecondary.Text = "Please Do Not Include The $ When Entering Your Amount";
+            // 
+            // Depositmain
+            // 
+            this.Depositmain.AutoSize = true;
+            this.Depositmain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Depositmain.Location = new System.Drawing.Point(31, 36);
+            this.Depositmain.Name = "Depositmain";
+            this.Depositmain.Size = new System.Drawing.Size(409, 13);
+            this.Depositmain.TabIndex = 0;
+            this.Depositmain.Text = "Please Enter The Amount You Wish To Deposit And Provide Your Pin For Verification" +
+    "";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 273);
+            this.ClientSize = new System.Drawing.Size(669, 265);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

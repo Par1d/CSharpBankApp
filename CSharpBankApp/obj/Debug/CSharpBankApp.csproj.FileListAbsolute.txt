@@ -74,7 +74,6 @@ C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpB
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\bin\Debug\CSharpBankApp.exe.config
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\bin\Debug\CSharpBankApp.exe
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\bin\Debug\CSharpBankApp.pdb
-C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\bin\Debug\MoneyLIb.dll
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.csprojResolveAssemblyReference.cache
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.Dashboard.resources
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.DepositForm.resources
