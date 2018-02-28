@@ -43,3 +43,13 @@ C:\Users\C Sharp.B056\source\repos\CSharpBankApp\TestConsole\obj\Debug\TestConso
 C:\Users\C Sharp.B056\source\repos\CSharpBankApp\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
 C:\Users\C Sharp.B056\source\repos\CSharpBankApp\TestConsole\obj\Debug\TestConsole.exe
 C:\Users\C Sharp.B056\source\repos\CSharpBankApp\TestConsole\obj\Debug\TestConsole.pdb
+C:\C# 2018\CSharpBankApp\TestConsole\bin\Debug\TestConsole.exe.config
+C:\C# 2018\CSharpBankApp\TestConsole\bin\Debug\TestConsole.exe
+C:\C# 2018\CSharpBankApp\TestConsole\bin\Debug\TestConsole.pdb
+C:\C# 2018\CSharpBankApp\TestConsole\bin\Debug\BankClassLibrary.dll
+C:\C# 2018\CSharpBankApp\TestConsole\bin\Debug\MoneyLIb.dll
+C:\C# 2018\CSharpBankApp\TestConsole\bin\Debug\BankClassLibrary.pdb
+C:\C# 2018\CSharpBankApp\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+C:\C# 2018\CSharpBankApp\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
+C:\C# 2018\CSharpBankApp\TestConsole\obj\Debug\TestConsole.exe
+C:\C# 2018\CSharpBankApp\TestConsole\obj\Debug\TestConsole.pdb
