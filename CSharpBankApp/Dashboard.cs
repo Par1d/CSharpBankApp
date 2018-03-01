@@ -58,7 +58,15 @@ namespace CSharpBankApp
 
         private void NewUserClear_Click(object sender, EventArgs e)
         {
-            
-        }
+            Firsttxt.Clear(); Middletxt.Clear(); Lasttxt.Clear();
+            NewUsernametxt.Clear(); NewPasswordtxt.Clear();
+            NewPasswordVerifytxt.Clear(); Mailingtxt.Clear();
+            MailingCitytxt.Clear(); Physicaltxt.Clear(); PhysicalCitytxt.Clear();
+            Hometxt.Clear(); Worktxt.Clear(); Celltxt.Clear(); CreatePintxt.Clear();
+            CreatePinVerifytxt.Clear(); Emailtxt.Clear(); EmailVerifytxt.Clear();
+            Questiontxt.Clear(); Answertxt.Clear();
+        } 
+        
+    
     }
 }

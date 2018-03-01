@@ -84,7 +84,7 @@
             this.CreatePintxt = new System.Windows.Forms.TextBox();
             this.CreatePinVerifylbl = new System.Windows.Forms.Label();
             this.CreatePinlbl = new System.Windows.Forms.Label();
-            this.VerifyEmailtxt = new System.Windows.Forms.TextBox();
+            this.EmailVerifytxt = new System.Windows.Forms.TextBox();
             this.Emailtxt = new System.Windows.Forms.TextBox();
             this.EmailVerifylbl = new System.Windows.Forms.Label();
             this.Emaillbl = new System.Windows.Forms.Label();
@@ -103,8 +103,8 @@
             this.MailingCitylbl = new System.Windows.Forms.Label();
             this.Mailingtxt = new System.Windows.Forms.TextBox();
             this.Mailinglbl = new System.Windows.Forms.Label();
-            this.VerifyPasswordlbl = new System.Windows.Forms.Label();
-            this.VerifyPasswordtxt = new System.Windows.Forms.TextBox();
+            this.NewPasswordVerifylbl = new System.Windows.Forms.Label();
+            this.NewPasswordVerifytxt = new System.Windows.Forms.TextBox();
             this.NewPasswordtxt = new System.Windows.Forms.TextBox();
             this.NewUsernametxt = new System.Windows.Forms.TextBox();
             this.NewUsernamelbl = new System.Windows.Forms.Label();
@@ -588,7 +588,7 @@
             this.NewUserpnl.Controls.Add(this.CreatePintxt);
             this.NewUserpnl.Controls.Add(this.CreatePinVerifylbl);
             this.NewUserpnl.Controls.Add(this.CreatePinlbl);
-            this.NewUserpnl.Controls.Add(this.VerifyEmailtxt);
+            this.NewUserpnl.Controls.Add(this.EmailVerifytxt);
             this.NewUserpnl.Controls.Add(this.Emailtxt);
             this.NewUserpnl.Controls.Add(this.EmailVerifylbl);
             this.NewUserpnl.Controls.Add(this.Emaillbl);
@@ -607,8 +607,8 @@
             this.NewUserpnl.Controls.Add(this.MailingCitylbl);
             this.NewUserpnl.Controls.Add(this.Mailingtxt);
             this.NewUserpnl.Controls.Add(this.Mailinglbl);
-            this.NewUserpnl.Controls.Add(this.VerifyPasswordlbl);
-            this.NewUserpnl.Controls.Add(this.VerifyPasswordtxt);
+            this.NewUserpnl.Controls.Add(this.NewPasswordVerifylbl);
+            this.NewUserpnl.Controls.Add(this.NewPasswordVerifytxt);
             this.NewUserpnl.Controls.Add(this.NewPasswordtxt);
             this.NewUserpnl.Controls.Add(this.NewUsernametxt);
             this.NewUserpnl.Controls.Add(this.NewUsernamelbl);
@@ -743,12 +743,12 @@
             this.CreatePinlbl.TabIndex = 43;
             this.CreatePinlbl.Text = "Create A PIN *";
             // 
-            // VerifyEmailtxt
+            // EmailVerifytxt
             // 
-            this.VerifyEmailtxt.Location = new System.Drawing.Point(131, 514);
-            this.VerifyEmailtxt.Name = "VerifyEmailtxt";
-            this.VerifyEmailtxt.Size = new System.Drawing.Size(244, 20);
-            this.VerifyEmailtxt.TabIndex = 66;
+            this.EmailVerifytxt.Location = new System.Drawing.Point(131, 514);
+            this.EmailVerifytxt.Name = "EmailVerifytxt";
+            this.EmailVerifytxt.Size = new System.Drawing.Size(244, 20);
+            this.EmailVerifytxt.TabIndex = 66;
             // 
             // Emailtxt
             // 
@@ -907,23 +907,23 @@
             this.Mailinglbl.TabIndex = 34;
             this.Mailinglbl.Text = "Mailing Address *";
             // 
-            // VerifyPasswordlbl
+            // NewPasswordVerifylbl
             // 
-            this.VerifyPasswordlbl.AutoSize = true;
-            this.VerifyPasswordlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VerifyPasswordlbl.Location = new System.Drawing.Point(277, 181);
-            this.VerifyPasswordlbl.Name = "VerifyPasswordlbl";
-            this.VerifyPasswordlbl.Size = new System.Drawing.Size(101, 15);
-            this.VerifyPasswordlbl.TabIndex = 39;
-            this.VerifyPasswordlbl.Text = "Verify Password *";
+            this.NewPasswordVerifylbl.AutoSize = true;
+            this.NewPasswordVerifylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPasswordVerifylbl.Location = new System.Drawing.Point(277, 181);
+            this.NewPasswordVerifylbl.Name = "NewPasswordVerifylbl";
+            this.NewPasswordVerifylbl.Size = new System.Drawing.Size(101, 15);
+            this.NewPasswordVerifylbl.TabIndex = 39;
+            this.NewPasswordVerifylbl.Text = "Verify Password *";
             // 
-            // VerifyPasswordtxt
+            // NewPasswordVerifytxt
             // 
-            this.VerifyPasswordtxt.Location = new System.Drawing.Point(381, 173);
-            this.VerifyPasswordtxt.Name = "VerifyPasswordtxt";
-            this.VerifyPasswordtxt.PasswordChar = '*';
-            this.VerifyPasswordtxt.Size = new System.Drawing.Size(131, 20);
-            this.VerifyPasswordtxt.TabIndex = 53;
+            this.NewPasswordVerifytxt.Location = new System.Drawing.Point(381, 173);
+            this.NewPasswordVerifytxt.Name = "NewPasswordVerifytxt";
+            this.NewPasswordVerifytxt.PasswordChar = '*';
+            this.NewPasswordVerifytxt.Size = new System.Drawing.Size(131, 20);
+            this.NewPasswordVerifytxt.TabIndex = 53;
             // 
             // NewPasswordtxt
             // 
@@ -1140,7 +1140,7 @@
         private System.Windows.Forms.TextBox CreatePintxt;
         private System.Windows.Forms.Label CreatePinVerifylbl;
         private System.Windows.Forms.Label CreatePinlbl;
-        private System.Windows.Forms.TextBox VerifyEmailtxt;
+        private System.Windows.Forms.TextBox EmailVerifytxt;
         private System.Windows.Forms.TextBox Emailtxt;
         private System.Windows.Forms.Label EmailVerifylbl;
         private System.Windows.Forms.Label Emaillbl;
@@ -1159,8 +1159,8 @@
         private System.Windows.Forms.Label MailingCitylbl;
         private System.Windows.Forms.TextBox Mailingtxt;
         private System.Windows.Forms.Label Mailinglbl;
-        private System.Windows.Forms.Label VerifyPasswordlbl;
-        private System.Windows.Forms.TextBox VerifyPasswordtxt;
+        private System.Windows.Forms.Label NewPasswordVerifylbl;
+        private System.Windows.Forms.TextBox NewPasswordVerifytxt;
         private System.Windows.Forms.TextBox NewPasswordtxt;
         private System.Windows.Forms.TextBox NewUsernametxt;
         private System.Windows.Forms.Label NewUsernamelbl;
