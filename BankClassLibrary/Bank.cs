@@ -29,8 +29,13 @@ namespace BankClassLibrary
             return cst;
         }
 
-        public Account OpenAccount(Customer cst, int accountID, int PIN, string accountName, decimal depositAmount)
+        public Account OpenAccount(Customer cst, int accountID, int PIN, string accountName, decimal depositAmount = 0)
         {
+            if (_accounts.ContainsKey(accountID))
+            {
+                throw new AccountInformationAlreadyUsed();
+            }
+
             Account acct = new Account(accountID, PIN, accountName, depositAmount);
             _accounts.Add(accountID, acct);
             cst.Accounts.Add(acct);

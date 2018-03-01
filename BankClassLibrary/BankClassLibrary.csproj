@@ -48,6 +48,7 @@
     <Compile Include="Bank.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="DebitCardService.cs" />
+    <Compile Include="Exceptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Teller.cs" />
     <Compile Include="Transaction.cs" />

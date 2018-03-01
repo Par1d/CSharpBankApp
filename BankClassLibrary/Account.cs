@@ -6,11 +6,6 @@ using System.Threading.Tasks;
 
 namespace BankClassLibrary
 {
-    public class InsufficientFundsException : Exception
-    {
-
-    }
-
     public class Account
     {
         private int _accountID;
