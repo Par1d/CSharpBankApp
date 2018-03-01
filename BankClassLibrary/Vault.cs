@@ -101,6 +101,21 @@ namespace BankClassLibrary
 
         }
         //next is remove money
+        //request for an amount of money
+        //
+        //Cash
+        public List<CirculatingMoney> RemoveMoney(decimal amt) {
+            //17.89
+            
+            // 
+            if (amt >= 20.0m ) {
+
+                //go through the vault list find an instance of that
+            }
+            List<CirculatingMoney> list = new List<CirculatingMoney>();
+            
+            return list;
+        }
         
     }
 
