@@ -17,11 +17,6 @@ namespace CSharpBankApp
             InitializeComponent();
         }
 
-        private void Createlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            new NewUserForm().Show();
-        }
-
         private void Cancelbtn_Click(object sender, EventArgs e)
         {
             this.Close();

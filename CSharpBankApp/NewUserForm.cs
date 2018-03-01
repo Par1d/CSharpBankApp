@@ -16,5 +16,20 @@ namespace CSharpBankApp
         {
             InitializeComponent();
         }
+
+        private void Submitbtn_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void Clearbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cancelbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

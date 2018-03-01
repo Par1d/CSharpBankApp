@@ -476,6 +476,7 @@
             this.Cancelbtn.TabIndex = 23;
             this.Cancelbtn.Text = "&Cancel";
             this.Cancelbtn.UseVisualStyleBackColor = true;
+            this.Cancelbtn.Click += new System.EventHandler(this.Cancelbtn_Click);
             // 
             // Clearbtn
             // 
@@ -485,6 +486,7 @@
             this.Clearbtn.TabIndex = 24;
             this.Clearbtn.Text = "Clea&r";
             this.Clearbtn.UseVisualStyleBackColor = true;
+            this.Clearbtn.Click += new System.EventHandler(this.Clearbtn_Click);
             // 
             // Submitbtn
             // 
@@ -494,6 +496,7 @@
             this.Submitbtn.TabIndex = 25;
             this.Submitbtn.Text = "&Submit";
             this.Submitbtn.UseVisualStyleBackColor = true;
+            this.Submitbtn.Click += new System.EventHandler(this.Submitbtn_Click);
             // 
             // NewUserForm
             // 

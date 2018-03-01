@@ -113,7 +113,6 @@
             this.Createlbl.TabIndex = 5;
             this.Createlbl.TabStop = true;
             this.Createlbl.Text = "Create an Account";
-            this.Createlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Createlbl_LinkClicked);
             // 
             // Forgotlnk
             // 
