@@ -21,20 +21,44 @@ namespace CSharpBankApp
         {
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Loginbtn_Click(object sender, EventArgs e)
+        {
+            Loginpnl.Hide();
+            Maintab.Show();
+        }
+
+        private void LoginCancelbtn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void LogInlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void logoutlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form LoginForm = new LoginForm();
-            DialogResult selectedButton = LoginForm.ShowDialog();
-            if (selectedButton == DialogResult.OK)
-            {
-                LogInlbl.Hide();
-                maintab.Show();
-            }
+            Maintab.Hide();
+            Loginpnl.Show();
+        }
+
+        private void Createlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            NewUserpnl.Show();
+            Loginpnl.Hide();
+        }
+
+        private void NewUserCancel_Click(object sender, EventArgs e)
+        {
+            NewUserpnl.Hide();
+            Loginpnl.Show();
+        }
+
+        private void NewUserSubmit_Click(object sender, EventArgs e)
+        {
+            NewUserpnl.Hide();
+            Loginpnl.Show();
+        }
+
+        private void NewUserClear_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
