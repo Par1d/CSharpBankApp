@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BankClassLibrary;
+using MoneyLib;
 
 namespace TestConsole
 {
@@ -15,14 +16,14 @@ namespace TestConsole
             Customer bob = bank.CreateCustomer("bobby");
             Account myAccount = bank.OpenAccount(bob, 1234, 1234, "MyChecking", 500m);
 
-            Console.WriteLine(bob.UserAccount.Balance);
+            //Console.WriteLine(bob.customer.Balance);
+
             
             Console.ReadKey();
 
-            Console.WriteLine();//added ;
+            
 
-            Circulate
-            //commit test
+           
         }
     }
 }

@@ -26,5 +26,10 @@ namespace CSharpBankApp
         {
             this.Close();
         }
+
+        private void Loginbtn_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
     }
 }
