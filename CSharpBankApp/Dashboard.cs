@@ -19,12 +19,22 @@ namespace CSharpBankApp
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            new LoginForm().Show();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
+        }
+
+        private void LogInlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form LoginForm = new LoginForm();
+            DialogResult selectedButton = LoginForm.ShowDialog();
+            if (selectedButton == DialogResult.OK)
+            {
+                LogInlbl.Hide();
+                maintab.Show();
+            }
         }
     }
 }

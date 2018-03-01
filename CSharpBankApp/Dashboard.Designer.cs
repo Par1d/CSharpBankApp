@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.maintab = new System.Windows.Forms.TabControl();
-            this.dashboardtab = new System.Windows.Forms.TabPage();
-            this.logoutlbl = new System.Windows.Forms.LinkLabel();
             this.withdrawtab = new System.Windows.Forms.TabPage();
             this.Submitbtn = new System.Windows.Forms.Button();
             this.Clearbtn = new System.Windows.Forms.Button();
@@ -59,12 +57,15 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.balancelbl = new System.Windows.Forms.Label();
+            this.dashboardtab = new System.Windows.Forms.TabPage();
             this.balancetxt = new System.Windows.Forms.TextBox();
+            this.balancelbl = new System.Windows.Forms.Label();
+            this.logoutlbl = new System.Windows.Forms.LinkLabel();
+            this.LogInlbl = new System.Windows.Forms.LinkLabel();
             this.maintab.SuspendLayout();
-            this.dashboardtab.SuspendLayout();
             this.withdrawtab.SuspendLayout();
             this.deposittab.SuspendLayout();
+            this.dashboardtab.SuspendLayout();
             this.SuspendLayout();
             // 
             // maintab
@@ -78,31 +79,7 @@
             this.maintab.SelectedIndex = 0;
             this.maintab.Size = new System.Drawing.Size(446, 195);
             this.maintab.TabIndex = 0;
-            // 
-            // dashboardtab
-            // 
-            this.dashboardtab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dashboardtab.Controls.Add(this.balancetxt);
-            this.dashboardtab.Controls.Add(this.balancelbl);
-            this.dashboardtab.Controls.Add(this.logoutlbl);
-            this.dashboardtab.Location = new System.Drawing.Point(4, 22);
-            this.dashboardtab.Name = "dashboardtab";
-            this.dashboardtab.Padding = new System.Windows.Forms.Padding(3);
-            this.dashboardtab.Size = new System.Drawing.Size(438, 169);
-            this.dashboardtab.TabIndex = 0;
-            this.dashboardtab.Text = "Dashboard";
-            this.dashboardtab.UseVisualStyleBackColor = true;
-            // 
-            // logoutlbl
-            // 
-            this.logoutlbl.AutoSize = true;
-            this.logoutlbl.Location = new System.Drawing.Point(6, 151);
-            this.logoutlbl.Name = "logoutlbl";
-            this.logoutlbl.Size = new System.Drawing.Size(45, 13);
-            this.logoutlbl.TabIndex = 0;
-            this.logoutlbl.TabStop = true;
-            this.logoutlbl.Text = "Log Out";
-            this.logoutlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.maintab.Visible = false;
             // 
             // withdrawtab
             // 
@@ -392,14 +369,19 @@
             this.label6.Text = "Please Enter The Amount You Wish To Deposit And Provide Your Pin For Verification" +
     "";
             // 
-            // balancelbl
+            // dashboardtab
             // 
-            this.balancelbl.AutoSize = true;
-            this.balancelbl.Location = new System.Drawing.Point(6, 110);
-            this.balancelbl.Name = "balancelbl";
-            this.balancelbl.Size = new System.Drawing.Size(89, 13);
-            this.balancelbl.TabIndex = 0;
-            this.balancelbl.Text = "Account Balance";
+            this.dashboardtab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dashboardtab.Controls.Add(this.balancetxt);
+            this.dashboardtab.Controls.Add(this.balancelbl);
+            this.dashboardtab.Controls.Add(this.logoutlbl);
+            this.dashboardtab.Location = new System.Drawing.Point(4, 22);
+            this.dashboardtab.Name = "dashboardtab";
+            this.dashboardtab.Padding = new System.Windows.Forms.Padding(3);
+            this.dashboardtab.Size = new System.Drawing.Size(438, 169);
+            this.dashboardtab.TabIndex = 0;
+            this.dashboardtab.Text = "Dashboard";
+            this.dashboardtab.UseVisualStyleBackColor = true;
             // 
             // balancetxt
             // 
@@ -409,25 +391,58 @@
             this.balancetxt.Size = new System.Drawing.Size(100, 20);
             this.balancetxt.TabIndex = 0;
             // 
+            // balancelbl
+            // 
+            this.balancelbl.AutoSize = true;
+            this.balancelbl.Location = new System.Drawing.Point(6, 110);
+            this.balancelbl.Name = "balancelbl";
+            this.balancelbl.Size = new System.Drawing.Size(89, 13);
+            this.balancelbl.TabIndex = 0;
+            this.balancelbl.Text = "Account Balance";
+            // 
+            // logoutlbl
+            // 
+            this.logoutlbl.AutoSize = true;
+            this.logoutlbl.Location = new System.Drawing.Point(6, 151);
+            this.logoutlbl.Name = "logoutlbl";
+            this.logoutlbl.Size = new System.Drawing.Size(45, 13);
+            this.logoutlbl.TabIndex = 0;
+            this.logoutlbl.TabStop = true;
+            this.logoutlbl.Text = "Log Out";
+            this.logoutlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // LogInlbl
+            // 
+            this.LogInlbl.AutoSize = true;
+            this.LogInlbl.Location = new System.Drawing.Point(12, 93);
+            this.LogInlbl.Name = "LogInlbl";
+            this.LogInlbl.Size = new System.Drawing.Size(33, 13);
+            this.LogInlbl.TabIndex = 1;
+            this.LogInlbl.TabStop = true;
+            this.LogInlbl.Text = "Login";
+            this.LogInlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LogInlbl_LinkClicked);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(470, 219);
             this.Controls.Add(this.maintab);
+            this.Controls.Add(this.LogInlbl);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dashboard";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.maintab.ResumeLayout(false);
-            this.dashboardtab.ResumeLayout(false);
-            this.dashboardtab.PerformLayout();
             this.withdrawtab.ResumeLayout(false);
             this.withdrawtab.PerformLayout();
             this.deposittab.ResumeLayout(false);
             this.deposittab.PerformLayout();
+            this.dashboardtab.ResumeLayout(false);
+            this.dashboardtab.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -466,5 +481,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox balancetxt;
         private System.Windows.Forms.Label balancelbl;
+        private System.Windows.Forms.LinkLabel LogInlbl;
     }
 }

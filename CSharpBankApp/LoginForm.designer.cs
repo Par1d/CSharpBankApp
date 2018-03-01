@@ -102,6 +102,7 @@
             this.Loginbtn.TabIndex = 4;
             this.Loginbtn.Text = "&Login";
             this.Loginbtn.UseVisualStyleBackColor = true;
+            this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
             // 
             // Createlbl
             // 
