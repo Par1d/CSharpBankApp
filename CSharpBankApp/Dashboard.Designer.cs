@@ -80,7 +80,7 @@
             this.Questionlbl = new System.Windows.Forms.Label();
             this.Answerlbl = new System.Windows.Forms.Label();
             this.CreatePinVerifytxt = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.NewPinRequirementslbl = new System.Windows.Forms.Label();
             this.CreatePintxt = new System.Windows.Forms.TextBox();
             this.CreatePinVerifylbl = new System.Windows.Forms.Label();
             this.CreatePinlbl = new System.Windows.Forms.Label();
@@ -180,7 +180,7 @@
             this.DashboardLogoutlbl.TabIndex = 0;
             this.DashboardLogoutlbl.TabStop = true;
             this.DashboardLogoutlbl.Text = "Log Out";
-            this.DashboardLogoutlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.logoutlbl_LinkClicked);
+            this.DashboardLogoutlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Logoutlbl_LinkClicked);
             // 
             // withdrawtab
             // 
@@ -211,18 +211,20 @@
             this.WithdrawSubmitbtn.Location = new System.Drawing.Point(323, 134);
             this.WithdrawSubmitbtn.Name = "WithdrawSubmitbtn";
             this.WithdrawSubmitbtn.Size = new System.Drawing.Size(75, 23);
-            this.WithdrawSubmitbtn.TabIndex = 20;
+            this.WithdrawSubmitbtn.TabIndex = 7;
             this.WithdrawSubmitbtn.Text = "&Submit";
             this.WithdrawSubmitbtn.UseVisualStyleBackColor = true;
+            this.WithdrawSubmitbtn.Click += new System.EventHandler(this.WithdrawSubmitbtn_Click);
             // 
             // WithdrawClearbtn
             // 
             this.WithdrawClearbtn.Location = new System.Drawing.Point(179, 134);
             this.WithdrawClearbtn.Name = "WithdrawClearbtn";
             this.WithdrawClearbtn.Size = new System.Drawing.Size(75, 23);
-            this.WithdrawClearbtn.TabIndex = 19;
+            this.WithdrawClearbtn.TabIndex = 6;
             this.WithdrawClearbtn.Text = "Clea&r";
             this.WithdrawClearbtn.UseVisualStyleBackColor = true;
+            this.WithdrawClearbtn.Click += new System.EventHandler(this.WithdrawClearbtn_Click);
             // 
             // WithdrawCancelbtn
             // 
@@ -230,9 +232,10 @@
             this.WithdrawCancelbtn.Location = new System.Drawing.Point(30, 134);
             this.WithdrawCancelbtn.Name = "WithdrawCancelbtn";
             this.WithdrawCancelbtn.Size = new System.Drawing.Size(75, 23);
-            this.WithdrawCancelbtn.TabIndex = 18;
+            this.WithdrawCancelbtn.TabIndex = 5;
             this.WithdrawCancelbtn.Text = "&Cancel";
             this.WithdrawCancelbtn.UseVisualStyleBackColor = true;
+            this.WithdrawCancelbtn.Click += new System.EventHandler(this.WithdrawCancelbtn_Click);
             // 
             // WithdrawPinVerifytxt
             // 
@@ -241,7 +244,7 @@
             this.WithdrawPinVerifytxt.Name = "WithdrawPinVerifytxt";
             this.WithdrawPinVerifytxt.PasswordChar = '*';
             this.WithdrawPinVerifytxt.Size = new System.Drawing.Size(113, 20);
-            this.WithdrawPinVerifytxt.TabIndex = 17;
+            this.WithdrawPinVerifytxt.TabIndex = 4;
             // 
             // WithdrawPinVerifylbl
             // 
@@ -250,7 +253,7 @@
             this.WithdrawPinVerifylbl.Location = new System.Drawing.Point(226, 90);
             this.WithdrawPinVerifylbl.Name = "WithdrawPinVerifylbl";
             this.WithdrawPinVerifylbl.Size = new System.Drawing.Size(72, 13);
-            this.WithdrawPinVerifylbl.TabIndex = 8;
+            this.WithdrawPinVerifylbl.TabIndex = 0;
             this.WithdrawPinVerifylbl.Text = "Verify PIN :";
             // 
             // WithdrawPintxt
@@ -260,7 +263,7 @@
             this.WithdrawPintxt.Name = "WithdrawPintxt";
             this.WithdrawPintxt.PasswordChar = '*';
             this.WithdrawPintxt.Size = new System.Drawing.Size(113, 20);
-            this.WithdrawPintxt.TabIndex = 16;
+            this.WithdrawPintxt.TabIndex = 3;
             // 
             // WithdrawPinlbl
             // 
@@ -269,7 +272,7 @@
             this.WithdrawPinlbl.Location = new System.Drawing.Point(27, 90);
             this.WithdrawPinlbl.Name = "WithdrawPinlbl";
             this.WithdrawPinlbl.Size = new System.Drawing.Size(36, 13);
-            this.WithdrawPinlbl.TabIndex = 9;
+            this.WithdrawPinlbl.TabIndex = 0;
             this.WithdrawPinlbl.Text = "PIN :";
             // 
             // WithdrawAmountVerifytxt
@@ -277,7 +280,7 @@
             this.WithdrawAmountVerifytxt.Location = new System.Drawing.Point(304, 42);
             this.WithdrawAmountVerifytxt.Name = "WithdrawAmountVerifytxt";
             this.WithdrawAmountVerifytxt.Size = new System.Drawing.Size(113, 20);
-            this.WithdrawAmountVerifytxt.TabIndex = 15;
+            this.WithdrawAmountVerifytxt.TabIndex = 2;
             // 
             // WithdrawAmountVerifylbl
             // 
@@ -286,7 +289,7 @@
             this.WithdrawAmountVerifylbl.Location = new System.Drawing.Point(205, 49);
             this.WithdrawAmountVerifylbl.Name = "WithdrawAmountVerifylbl";
             this.WithdrawAmountVerifylbl.Size = new System.Drawing.Size(93, 13);
-            this.WithdrawAmountVerifylbl.TabIndex = 10;
+            this.WithdrawAmountVerifylbl.TabIndex = 0;
             this.WithdrawAmountVerifylbl.Text = "Verify Amount :";
             // 
             // WithdrawSecondarylbl
@@ -295,7 +298,7 @@
             this.WithdrawSecondarylbl.Location = new System.Drawing.Point(76, 16);
             this.WithdrawSecondarylbl.Name = "WithdrawSecondarylbl";
             this.WithdrawSecondarylbl.Size = new System.Drawing.Size(283, 13);
-            this.WithdrawSecondarylbl.TabIndex = 11;
+            this.WithdrawSecondarylbl.TabIndex = 0;
             this.WithdrawSecondarylbl.Text = "Please Do Not Include The $ When Entering Your Amount";
             // 
             // WithdrawAmounttxt
@@ -303,7 +306,7 @@
             this.WithdrawAmounttxt.Location = new System.Drawing.Point(69, 42);
             this.WithdrawAmounttxt.Name = "WithdrawAmounttxt";
             this.WithdrawAmounttxt.Size = new System.Drawing.Size(113, 20);
-            this.WithdrawAmounttxt.TabIndex = 14;
+            this.WithdrawAmounttxt.TabIndex = 1;
             // 
             // WithdrawAmountlbl
             // 
@@ -312,7 +315,7 @@
             this.WithdrawAmountlbl.Location = new System.Drawing.Point(6, 49);
             this.WithdrawAmountlbl.Name = "WithdrawAmountlbl";
             this.WithdrawAmountlbl.Size = new System.Drawing.Size(57, 13);
-            this.WithdrawAmountlbl.TabIndex = 12;
+            this.WithdrawAmountlbl.TabIndex = 0;
             this.WithdrawAmountlbl.Text = "Amount :";
             // 
             // WithdrawMainlbl
@@ -322,7 +325,7 @@
             this.WithdrawMainlbl.Location = new System.Drawing.Point(6, 3);
             this.WithdrawMainlbl.Name = "WithdrawMainlbl";
             this.WithdrawMainlbl.Size = new System.Drawing.Size(418, 13);
-            this.WithdrawMainlbl.TabIndex = 13;
+            this.WithdrawMainlbl.TabIndex = 0;
             this.WithdrawMainlbl.Text = "Please Enter The Amount You Wish To Withdraw And Provide Your Pin For Verificatio" +
     "n";
             // 
@@ -355,18 +358,20 @@
             this.DepositSubmitbtn.Location = new System.Drawing.Point(323, 134);
             this.DepositSubmitbtn.Name = "DepositSubmitbtn";
             this.DepositSubmitbtn.Size = new System.Drawing.Size(75, 23);
-            this.DepositSubmitbtn.TabIndex = 20;
+            this.DepositSubmitbtn.TabIndex = 7;
             this.DepositSubmitbtn.Text = "&Submit";
             this.DepositSubmitbtn.UseVisualStyleBackColor = true;
+            this.DepositSubmitbtn.Click += new System.EventHandler(this.DepositSubmitbtn_Click);
             // 
             // DepositClearbtn
             // 
             this.DepositClearbtn.Location = new System.Drawing.Point(179, 134);
             this.DepositClearbtn.Name = "DepositClearbtn";
             this.DepositClearbtn.Size = new System.Drawing.Size(75, 23);
-            this.DepositClearbtn.TabIndex = 19;
+            this.DepositClearbtn.TabIndex = 6;
             this.DepositClearbtn.Text = "Clea&r";
             this.DepositClearbtn.UseVisualStyleBackColor = true;
+            this.DepositClearbtn.Click += new System.EventHandler(this.DepositClearbtn_Click);
             // 
             // DepositCancelbtn
             // 
@@ -374,9 +379,10 @@
             this.DepositCancelbtn.Location = new System.Drawing.Point(30, 134);
             this.DepositCancelbtn.Name = "DepositCancelbtn";
             this.DepositCancelbtn.Size = new System.Drawing.Size(75, 23);
-            this.DepositCancelbtn.TabIndex = 18;
+            this.DepositCancelbtn.TabIndex = 5;
             this.DepositCancelbtn.Text = "&Cancel";
             this.DepositCancelbtn.UseVisualStyleBackColor = true;
+            this.DepositCancelbtn.Click += new System.EventHandler(this.DepositCancelbtn_Click);
             // 
             // DepositPinVerifytxt
             // 
@@ -385,7 +391,7 @@
             this.DepositPinVerifytxt.Name = "DepositPinVerifytxt";
             this.DepositPinVerifytxt.PasswordChar = '*';
             this.DepositPinVerifytxt.Size = new System.Drawing.Size(113, 20);
-            this.DepositPinVerifytxt.TabIndex = 17;
+            this.DepositPinVerifytxt.TabIndex = 4;
             // 
             // DepositPinVerifylbl
             // 
@@ -394,7 +400,7 @@
             this.DepositPinVerifylbl.Location = new System.Drawing.Point(226, 90);
             this.DepositPinVerifylbl.Name = "DepositPinVerifylbl";
             this.DepositPinVerifylbl.Size = new System.Drawing.Size(72, 13);
-            this.DepositPinVerifylbl.TabIndex = 8;
+            this.DepositPinVerifylbl.TabIndex = 0;
             this.DepositPinVerifylbl.Text = "Verify PIN :";
             // 
             // DepositPintxt
@@ -404,7 +410,7 @@
             this.DepositPintxt.Name = "DepositPintxt";
             this.DepositPintxt.PasswordChar = '*';
             this.DepositPintxt.Size = new System.Drawing.Size(113, 20);
-            this.DepositPintxt.TabIndex = 16;
+            this.DepositPintxt.TabIndex = 3;
             // 
             // DepositPinlbl
             // 
@@ -413,7 +419,7 @@
             this.DepositPinlbl.Location = new System.Drawing.Point(27, 90);
             this.DepositPinlbl.Name = "DepositPinlbl";
             this.DepositPinlbl.Size = new System.Drawing.Size(36, 13);
-            this.DepositPinlbl.TabIndex = 9;
+            this.DepositPinlbl.TabIndex = 0;
             this.DepositPinlbl.Text = "PIN :";
             // 
             // DepositAmountVerifytxt
@@ -421,7 +427,7 @@
             this.DepositAmountVerifytxt.Location = new System.Drawing.Point(304, 42);
             this.DepositAmountVerifytxt.Name = "DepositAmountVerifytxt";
             this.DepositAmountVerifytxt.Size = new System.Drawing.Size(113, 20);
-            this.DepositAmountVerifytxt.TabIndex = 15;
+            this.DepositAmountVerifytxt.TabIndex = 2;
             // 
             // DepositAmountVerifylbl
             // 
@@ -430,7 +436,7 @@
             this.DepositAmountVerifylbl.Location = new System.Drawing.Point(205, 49);
             this.DepositAmountVerifylbl.Name = "DepositAmountVerifylbl";
             this.DepositAmountVerifylbl.Size = new System.Drawing.Size(93, 13);
-            this.DepositAmountVerifylbl.TabIndex = 10;
+            this.DepositAmountVerifylbl.TabIndex = 0;
             this.DepositAmountVerifylbl.Text = "Verify Amount :";
             // 
             // DepositAmountlbl
@@ -440,7 +446,7 @@
             this.DepositAmountlbl.Location = new System.Drawing.Point(6, 49);
             this.DepositAmountlbl.Name = "DepositAmountlbl";
             this.DepositAmountlbl.Size = new System.Drawing.Size(57, 13);
-            this.DepositAmountlbl.TabIndex = 11;
+            this.DepositAmountlbl.TabIndex = 0;
             this.DepositAmountlbl.Text = "Amount :";
             // 
             // DepositAmounttxt
@@ -448,7 +454,7 @@
             this.DepositAmounttxt.Location = new System.Drawing.Point(69, 42);
             this.DepositAmounttxt.Name = "DepositAmounttxt";
             this.DepositAmounttxt.Size = new System.Drawing.Size(113, 20);
-            this.DepositAmounttxt.TabIndex = 14;
+            this.DepositAmounttxt.TabIndex = 1;
             // 
             // DepositSecondarylbl
             // 
@@ -456,7 +462,7 @@
             this.DepositSecondarylbl.Location = new System.Drawing.Point(76, 16);
             this.DepositSecondarylbl.Name = "DepositSecondarylbl";
             this.DepositSecondarylbl.Size = new System.Drawing.Size(283, 13);
-            this.DepositSecondarylbl.TabIndex = 12;
+            this.DepositSecondarylbl.TabIndex = 0;
             this.DepositSecondarylbl.Text = "Please Do Not Include The $ When Entering Your Amount";
             // 
             // DepositMainlbl
@@ -466,7 +472,7 @@
             this.DepositMainlbl.Location = new System.Drawing.Point(6, 3);
             this.DepositMainlbl.Name = "DepositMainlbl";
             this.DepositMainlbl.Size = new System.Drawing.Size(409, 13);
-            this.DepositMainlbl.TabIndex = 13;
+            this.DepositMainlbl.TabIndex = 0;
             this.DepositMainlbl.Text = "Please Enter The Amount You Wish To Deposit And Provide Your Pin For Verification" +
     "";
             // 
@@ -492,7 +498,7 @@
             this.Forgotlnk.Location = new System.Drawing.Point(253, 162);
             this.Forgotlnk.Name = "Forgotlnk";
             this.Forgotlnk.Size = new System.Drawing.Size(92, 13);
-            this.Forgotlnk.TabIndex = 15;
+            this.Forgotlnk.TabIndex = 6;
             this.Forgotlnk.TabStop = true;
             this.Forgotlnk.Text = "Forgot Password?";
             // 
@@ -502,7 +508,7 @@
             this.Createlbl.Location = new System.Drawing.Point(98, 162);
             this.Createlbl.Name = "Createlbl";
             this.Createlbl.Size = new System.Drawing.Size(96, 13);
-            this.Createlbl.TabIndex = 14;
+            this.Createlbl.TabIndex = 5;
             this.Createlbl.TabStop = true;
             this.Createlbl.Text = "Create an Account";
             this.Createlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Createlbl_LinkClicked);
@@ -512,7 +518,7 @@
             this.Loginbtn.Location = new System.Drawing.Point(256, 127);
             this.Loginbtn.Name = "Loginbtn";
             this.Loginbtn.Size = new System.Drawing.Size(75, 23);
-            this.Loginbtn.TabIndex = 13;
+            this.Loginbtn.TabIndex = 4;
             this.Loginbtn.Text = "&Login";
             this.Loginbtn.UseVisualStyleBackColor = true;
             this.Loginbtn.Click += new System.EventHandler(this.Loginbtn_Click);
@@ -523,7 +529,7 @@
             this.LoginCancelbtn.Location = new System.Drawing.Point(119, 127);
             this.LoginCancelbtn.Name = "LoginCancelbtn";
             this.LoginCancelbtn.Size = new System.Drawing.Size(75, 23);
-            this.LoginCancelbtn.TabIndex = 12;
+            this.LoginCancelbtn.TabIndex = 3;
             this.LoginCancelbtn.Text = "&Cancel";
             this.LoginCancelbtn.UseVisualStyleBackColor = true;
             this.LoginCancelbtn.Click += new System.EventHandler(this.LoginCancelbtn_Click);
@@ -533,14 +539,14 @@
             this.Passwordtxt.Location = new System.Drawing.Point(171, 87);
             this.Passwordtxt.Name = "Passwordtxt";
             this.Passwordtxt.Size = new System.Drawing.Size(189, 20);
-            this.Passwordtxt.TabIndex = 11;
+            this.Passwordtxt.TabIndex = 2;
             // 
             // Usernametxt
             // 
             this.Usernametxt.Location = new System.Drawing.Point(171, 49);
             this.Usernametxt.Name = "Usernametxt";
             this.Usernametxt.Size = new System.Drawing.Size(189, 20);
-            this.Usernametxt.TabIndex = 10;
+            this.Usernametxt.TabIndex = 1;
             // 
             // Passwordlbl
             // 
@@ -549,7 +555,7 @@
             this.Passwordlbl.Location = new System.Drawing.Point(62, 90);
             this.Passwordlbl.Name = "Passwordlbl";
             this.Passwordlbl.Size = new System.Drawing.Size(77, 17);
-            this.Passwordlbl.TabIndex = 7;
+            this.Passwordlbl.TabIndex = 0;
             this.Passwordlbl.Text = "Password";
             // 
             // Usernamelbl
@@ -559,7 +565,7 @@
             this.Usernamelbl.Location = new System.Drawing.Point(62, 52);
             this.Usernamelbl.Name = "Usernamelbl";
             this.Usernamelbl.Size = new System.Drawing.Size(81, 17);
-            this.Usernamelbl.TabIndex = 8;
+            this.Usernamelbl.TabIndex = 0;
             this.Usernamelbl.Text = "Username";
             // 
             // loginlbl
@@ -569,7 +575,7 @@
             this.loginlbl.Location = new System.Drawing.Point(62, 19);
             this.loginlbl.Name = "loginlbl";
             this.loginlbl.Size = new System.Drawing.Size(322, 20);
-            this.loginlbl.TabIndex = 9;
+            this.loginlbl.TabIndex = 0;
             this.loginlbl.Text = "Please Enter Your Username And Password";
             // 
             // NewUserpnl
@@ -584,7 +590,7 @@
             this.NewUserpnl.Controls.Add(this.Questionlbl);
             this.NewUserpnl.Controls.Add(this.Answerlbl);
             this.NewUserpnl.Controls.Add(this.CreatePinVerifytxt);
-            this.NewUserpnl.Controls.Add(this.label7);
+            this.NewUserpnl.Controls.Add(this.NewPinRequirementslbl);
             this.NewUserpnl.Controls.Add(this.CreatePintxt);
             this.NewUserpnl.Controls.Add(this.CreatePinVerifylbl);
             this.NewUserpnl.Controls.Add(this.CreatePinlbl);
@@ -627,7 +633,7 @@
             this.NewUserpnl.Name = "NewUserpnl";
             this.NewUserpnl.Padding = new System.Windows.Forms.Padding(3);
             this.NewUserpnl.Size = new System.Drawing.Size(518, 699);
-            this.NewUserpnl.TabIndex = 1;
+            this.NewUserpnl.TabIndex = 0;
             this.NewUserpnl.Visible = false;
             // 
             // NewUserSubmit
@@ -635,7 +641,7 @@
             this.NewUserSubmit.Location = new System.Drawing.Point(407, 670);
             this.NewUserSubmit.Name = "NewUserSubmit";
             this.NewUserSubmit.Size = new System.Drawing.Size(75, 23);
-            this.NewUserSubmit.TabIndex = 72;
+            this.NewUserSubmit.TabIndex = 25;
             this.NewUserSubmit.Text = "&Submit";
             this.NewUserSubmit.UseVisualStyleBackColor = true;
             this.NewUserSubmit.Click += new System.EventHandler(this.NewUserSubmit_Click);
@@ -645,7 +651,7 @@
             this.NewUserClear.Location = new System.Drawing.Point(232, 670);
             this.NewUserClear.Name = "NewUserClear";
             this.NewUserClear.Size = new System.Drawing.Size(75, 23);
-            this.NewUserClear.TabIndex = 71;
+            this.NewUserClear.TabIndex = 24;
             this.NewUserClear.Text = "Clea&r";
             this.NewUserClear.UseVisualStyleBackColor = true;
             this.NewUserClear.Click += new System.EventHandler(this.NewUserClear_Click);
@@ -656,7 +662,7 @@
             this.NewUserCancel.Location = new System.Drawing.Point(49, 670);
             this.NewUserCancel.Name = "NewUserCancel";
             this.NewUserCancel.Size = new System.Drawing.Size(75, 23);
-            this.NewUserCancel.TabIndex = 70;
+            this.NewUserCancel.TabIndex = 23;
             this.NewUserCancel.Text = "&Cancel";
             this.NewUserCancel.UseVisualStyleBackColor = true;
             this.NewUserCancel.Click += new System.EventHandler(this.NewUserCancel_Click);
@@ -666,14 +672,14 @@
             this.Answertxt.Location = new System.Drawing.Point(48, 626);
             this.Answertxt.Name = "Answertxt";
             this.Answertxt.Size = new System.Drawing.Size(433, 20);
-            this.Answertxt.TabIndex = 69;
+            this.Answertxt.TabIndex = 22;
             // 
             // Questiontxt
             // 
             this.Questiontxt.Location = new System.Drawing.Point(48, 574);
             this.Questiontxt.Name = "Questiontxt";
             this.Questiontxt.Size = new System.Drawing.Size(433, 20);
-            this.Questiontxt.TabIndex = 68;
+            this.Questiontxt.TabIndex = 21;
             // 
             // Questionlbl
             // 
@@ -682,7 +688,7 @@
             this.Questionlbl.Location = new System.Drawing.Point(193, 559);
             this.Questionlbl.Name = "Questionlbl";
             this.Questionlbl.Size = new System.Drawing.Size(166, 15);
-            this.Questionlbl.TabIndex = 45;
+            this.Questionlbl.TabIndex = 0;
             this.Questionlbl.Text = "Create A Recovery Question *";
             // 
             // Answerlbl
@@ -692,7 +698,7 @@
             this.Answerlbl.Location = new System.Drawing.Point(202, 611);
             this.Answerlbl.Name = "Answerlbl";
             this.Answerlbl.Size = new System.Drawing.Size(157, 15);
-            this.Answerlbl.TabIndex = 44;
+            this.Answerlbl.TabIndex = 0;
             this.Answerlbl.Text = "Create A Recovery Answer *";
             // 
             // CreatePinVerifytxt
@@ -702,17 +708,17 @@
             this.CreatePinVerifytxt.Name = "CreatePinVerifytxt";
             this.CreatePinVerifytxt.PasswordChar = '*';
             this.CreatePinVerifytxt.Size = new System.Drawing.Size(100, 20);
-            this.CreatePinVerifytxt.TabIndex = 63;
+            this.CreatePinVerifytxt.TabIndex = 18;
             // 
-            // label7
+            // NewPinRequirementslbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(307, 388);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(177, 15);
-            this.label7.TabIndex = 67;
-            this.label7.Text = "4 Number Requirement for PIN";
+            this.NewPinRequirementslbl.AutoSize = true;
+            this.NewPinRequirementslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPinRequirementslbl.Location = new System.Drawing.Point(307, 388);
+            this.NewPinRequirementslbl.Name = "NewPinRequirementslbl";
+            this.NewPinRequirementslbl.Size = new System.Drawing.Size(177, 15);
+            this.NewPinRequirementslbl.TabIndex = 0;
+            this.NewPinRequirementslbl.Text = "4 Number Requirement for PIN";
             // 
             // CreatePintxt
             // 
@@ -721,7 +727,7 @@
             this.CreatePintxt.Name = "CreatePintxt";
             this.CreatePintxt.PasswordChar = '*';
             this.CreatePintxt.Size = new System.Drawing.Size(100, 20);
-            this.CreatePintxt.TabIndex = 62;
+            this.CreatePintxt.TabIndex = 17;
             // 
             // CreatePinVerifylbl
             // 
@@ -730,7 +736,7 @@
             this.CreatePinVerifylbl.Location = new System.Drawing.Point(312, 445);
             this.CreatePinVerifylbl.Name = "CreatePinVerifylbl";
             this.CreatePinVerifylbl.Size = new System.Drawing.Size(67, 15);
-            this.CreatePinVerifylbl.TabIndex = 65;
+            this.CreatePinVerifylbl.TabIndex = 0;
             this.CreatePinVerifylbl.Text = "Verify PIN *";
             // 
             // CreatePinlbl
@@ -740,7 +746,7 @@
             this.CreatePinlbl.Location = new System.Drawing.Point(295, 419);
             this.CreatePinlbl.Name = "CreatePinlbl";
             this.CreatePinlbl.Size = new System.Drawing.Size(84, 15);
-            this.CreatePinlbl.TabIndex = 43;
+            this.CreatePinlbl.TabIndex = 0;
             this.CreatePinlbl.Text = "Create A PIN *";
             // 
             // EmailVerifytxt
@@ -748,14 +754,14 @@
             this.EmailVerifytxt.Location = new System.Drawing.Point(131, 514);
             this.EmailVerifytxt.Name = "EmailVerifytxt";
             this.EmailVerifytxt.Size = new System.Drawing.Size(244, 20);
-            this.EmailVerifytxt.TabIndex = 66;
+            this.EmailVerifytxt.TabIndex = 20;
             // 
             // Emailtxt
             // 
             this.Emailtxt.Location = new System.Drawing.Point(131, 488);
             this.Emailtxt.Name = "Emailtxt";
             this.Emailtxt.Size = new System.Drawing.Size(245, 20);
-            this.Emailtxt.TabIndex = 64;
+            this.Emailtxt.TabIndex = 19;
             // 
             // EmailVerifylbl
             // 
@@ -764,7 +770,7 @@
             this.EmailVerifylbl.Location = new System.Drawing.Point(45, 522);
             this.EmailVerifylbl.Name = "EmailVerifylbl";
             this.EmailVerifylbl.Size = new System.Drawing.Size(83, 15);
-            this.EmailVerifylbl.TabIndex = 35;
+            this.EmailVerifylbl.TabIndex = 0;
             this.EmailVerifylbl.Text = "Verify E-mail *";
             // 
             // Emaillbl
@@ -774,7 +780,7 @@
             this.Emaillbl.Location = new System.Drawing.Point(77, 496);
             this.Emaillbl.Name = "Emaillbl";
             this.Emaillbl.Size = new System.Drawing.Size(51, 15);
-            this.Emaillbl.TabIndex = 38;
+            this.Emaillbl.TabIndex = 0;
             this.Emaillbl.Text = "E-mail *";
             // 
             // Celltxt
@@ -782,21 +788,21 @@
             this.Celltxt.Location = new System.Drawing.Point(131, 437);
             this.Celltxt.Name = "Celltxt";
             this.Celltxt.Size = new System.Drawing.Size(140, 20);
-            this.Celltxt.TabIndex = 61;
+            this.Celltxt.TabIndex = 16;
             // 
             // Worktxt
             // 
             this.Worktxt.Location = new System.Drawing.Point(131, 411);
             this.Worktxt.Name = "Worktxt";
             this.Worktxt.Size = new System.Drawing.Size(140, 20);
-            this.Worktxt.TabIndex = 60;
+            this.Worktxt.TabIndex = 15;
             // 
             // Hometxt
             // 
             this.Hometxt.Location = new System.Drawing.Point(131, 385);
             this.Hometxt.Name = "Hometxt";
             this.Hometxt.Size = new System.Drawing.Size(140, 20);
-            this.Hometxt.TabIndex = 59;
+            this.Hometxt.TabIndex = 14;
             // 
             // Celllbl
             // 
@@ -805,7 +811,7 @@
             this.Celllbl.Location = new System.Drawing.Point(61, 445);
             this.Celllbl.Name = "Celllbl";
             this.Celllbl.Size = new System.Drawing.Size(67, 15);
-            this.Celllbl.TabIndex = 33;
+            this.Celllbl.TabIndex = 0;
             this.Celllbl.Text = "Cell Phone";
             // 
             // Worklbl
@@ -815,7 +821,7 @@
             this.Worklbl.Location = new System.Drawing.Point(54, 419);
             this.Worklbl.Name = "Worklbl";
             this.Worklbl.Size = new System.Drawing.Size(74, 15);
-            this.Worklbl.TabIndex = 32;
+            this.Worklbl.TabIndex = 0;
             this.Worklbl.Text = "Work Phone";
             // 
             // Homelbl
@@ -825,7 +831,7 @@
             this.Homelbl.Location = new System.Drawing.Point(48, 393);
             this.Homelbl.Name = "Homelbl";
             this.Homelbl.Size = new System.Drawing.Size(80, 15);
-            this.Homelbl.TabIndex = 31;
+            this.Homelbl.TabIndex = 0;
             this.Homelbl.Text = "Home Phone";
             // 
             // PhysicalCitylbl
@@ -835,7 +841,7 @@
             this.PhysicalCitylbl.Location = new System.Drawing.Point(37, 346);
             this.PhysicalCitylbl.Name = "PhysicalCitylbl";
             this.PhysicalCitylbl.Size = new System.Drawing.Size(91, 15);
-            this.PhysicalCitylbl.TabIndex = 30;
+            this.PhysicalCitylbl.TabIndex = 0;
             this.PhysicalCitylbl.Text = "City, State, Zip *";
             // 
             // PhysicalCitytxt
@@ -843,14 +849,14 @@
             this.PhysicalCitytxt.Location = new System.Drawing.Point(131, 338);
             this.PhysicalCitytxt.Name = "PhysicalCitytxt";
             this.PhysicalCitytxt.Size = new System.Drawing.Size(381, 20);
-            this.PhysicalCitytxt.TabIndex = 58;
+            this.PhysicalCitytxt.TabIndex = 13;
             // 
             // Physicaltxt
             // 
             this.Physicaltxt.Location = new System.Drawing.Point(131, 312);
             this.Physicaltxt.Name = "Physicaltxt";
             this.Physicaltxt.Size = new System.Drawing.Size(381, 20);
-            this.Physicaltxt.TabIndex = 57;
+            this.Physicaltxt.TabIndex = 12;
             // 
             // Physicallbl
             // 
@@ -859,7 +865,7 @@
             this.Physicallbl.Location = new System.Drawing.Point(21, 320);
             this.Physicallbl.Name = "Physicallbl";
             this.Physicallbl.Size = new System.Drawing.Size(107, 15);
-            this.Physicallbl.TabIndex = 28;
+            this.Physicallbl.TabIndex = 0;
             this.Physicallbl.Text = "Physical Address *";
             // 
             // AddressCheck
@@ -869,16 +875,17 @@
             this.AddressCheck.Location = new System.Drawing.Point(77, 279);
             this.AddressCheck.Name = "AddressCheck";
             this.AddressCheck.Size = new System.Drawing.Size(373, 19);
-            this.AddressCheck.TabIndex = 56;
+            this.AddressCheck.TabIndex = 1;
             this.AddressCheck.Text = "Check This Box is Mailing Address is the Same As Your Physical";
             this.AddressCheck.UseVisualStyleBackColor = true;
+            this.AddressCheck.CheckedChanged += new System.EventHandler(this.AddressCheck_CheckedChanged);
             // 
             // MailingCitytxt
             // 
             this.MailingCitytxt.Location = new System.Drawing.Point(131, 239);
             this.MailingCitytxt.Name = "MailingCitytxt";
             this.MailingCitytxt.Size = new System.Drawing.Size(381, 20);
-            this.MailingCitytxt.TabIndex = 55;
+            this.MailingCitytxt.TabIndex = 10;
             // 
             // MailingCitylbl
             // 
@@ -887,7 +894,7 @@
             this.MailingCitylbl.Location = new System.Drawing.Point(37, 247);
             this.MailingCitylbl.Name = "MailingCitylbl";
             this.MailingCitylbl.Size = new System.Drawing.Size(91, 15);
-            this.MailingCitylbl.TabIndex = 27;
+            this.MailingCitylbl.TabIndex = 0;
             this.MailingCitylbl.Text = "City, State, Zip *";
             // 
             // Mailingtxt
@@ -895,7 +902,7 @@
             this.Mailingtxt.Location = new System.Drawing.Point(131, 213);
             this.Mailingtxt.Name = "Mailingtxt";
             this.Mailingtxt.Size = new System.Drawing.Size(381, 20);
-            this.Mailingtxt.TabIndex = 54;
+            this.Mailingtxt.TabIndex = 9;
             // 
             // Mailinglbl
             // 
@@ -904,7 +911,7 @@
             this.Mailinglbl.Location = new System.Drawing.Point(25, 221);
             this.Mailinglbl.Name = "Mailinglbl";
             this.Mailinglbl.Size = new System.Drawing.Size(103, 15);
-            this.Mailinglbl.TabIndex = 34;
+            this.Mailinglbl.TabIndex = 0;
             this.Mailinglbl.Text = "Mailing Address *";
             // 
             // NewPasswordVerifylbl
@@ -914,7 +921,7 @@
             this.NewPasswordVerifylbl.Location = new System.Drawing.Point(277, 181);
             this.NewPasswordVerifylbl.Name = "NewPasswordVerifylbl";
             this.NewPasswordVerifylbl.Size = new System.Drawing.Size(101, 15);
-            this.NewPasswordVerifylbl.TabIndex = 39;
+            this.NewPasswordVerifylbl.TabIndex = 0;
             this.NewPasswordVerifylbl.Text = "Verify Password *";
             // 
             // NewPasswordVerifytxt
@@ -923,7 +930,7 @@
             this.NewPasswordVerifytxt.Name = "NewPasswordVerifytxt";
             this.NewPasswordVerifytxt.PasswordChar = '*';
             this.NewPasswordVerifytxt.Size = new System.Drawing.Size(131, 20);
-            this.NewPasswordVerifytxt.TabIndex = 53;
+            this.NewPasswordVerifytxt.TabIndex = 8;
             // 
             // NewPasswordtxt
             // 
@@ -931,14 +938,14 @@
             this.NewPasswordtxt.Name = "NewPasswordtxt";
             this.NewPasswordtxt.PasswordChar = '*';
             this.NewPasswordtxt.Size = new System.Drawing.Size(140, 20);
-            this.NewPasswordtxt.TabIndex = 52;
+            this.NewPasswordtxt.TabIndex = 7;
             // 
             // NewUsernametxt
             // 
             this.NewUsernametxt.Location = new System.Drawing.Point(131, 147);
             this.NewUsernametxt.Name = "NewUsernametxt";
             this.NewUsernametxt.Size = new System.Drawing.Size(140, 20);
-            this.NewUsernametxt.TabIndex = 51;
+            this.NewUsernametxt.TabIndex = 6;
             // 
             // NewUsernamelbl
             // 
@@ -947,7 +954,7 @@
             this.NewUsernamelbl.Location = new System.Drawing.Point(55, 155);
             this.NewUsernamelbl.Name = "NewUsernamelbl";
             this.NewUsernamelbl.Size = new System.Drawing.Size(73, 15);
-            this.NewUsernamelbl.TabIndex = 36;
+            this.NewUsernamelbl.TabIndex = 0;
             this.NewUsernamelbl.Text = "Username *";
             // 
             // NewPasswordlbl
@@ -957,7 +964,7 @@
             this.NewPasswordlbl.Location = new System.Drawing.Point(59, 181);
             this.NewPasswordlbl.Name = "NewPasswordlbl";
             this.NewPasswordlbl.Size = new System.Drawing.Size(69, 15);
-            this.NewPasswordlbl.TabIndex = 37;
+            this.NewPasswordlbl.TabIndex = 0;
             this.NewPasswordlbl.Text = "Password *";
             // 
             // Personalbtn
@@ -966,7 +973,7 @@
             this.Personalbtn.Location = new System.Drawing.Point(397, 87);
             this.Personalbtn.Name = "Personalbtn";
             this.Personalbtn.Size = new System.Drawing.Size(14, 13);
-            this.Personalbtn.TabIndex = 50;
+            this.Personalbtn.TabIndex = 5;
             this.Personalbtn.TabStop = true;
             this.Personalbtn.UseVisualStyleBackColor = true;
             // 
@@ -976,7 +983,7 @@
             this.Businessbtn.Location = new System.Drawing.Point(336, 87);
             this.Businessbtn.Name = "Businessbtn";
             this.Businessbtn.Size = new System.Drawing.Size(14, 13);
-            this.Businessbtn.TabIndex = 49;
+            this.Businessbtn.TabIndex = 4;
             this.Businessbtn.TabStop = true;
             this.Businessbtn.UseVisualStyleBackColor = true;
             // 
@@ -987,7 +994,7 @@
             this.AccountTypelbl.Location = new System.Drawing.Point(312, 69);
             this.AccountTypelbl.Name = "AccountTypelbl";
             this.AccountTypelbl.Size = new System.Drawing.Size(138, 15);
-            this.AccountTypelbl.TabIndex = 40;
+            this.AccountTypelbl.TabIndex = 0;
             this.AccountTypelbl.Text = "Business or Personal? *";
             // 
             // Middletxt
@@ -995,14 +1002,14 @@
             this.Middletxt.Location = new System.Drawing.Point(131, 84);
             this.Middletxt.Name = "Middletxt";
             this.Middletxt.Size = new System.Drawing.Size(140, 20);
-            this.Middletxt.TabIndex = 47;
+            this.Middletxt.TabIndex = 2;
             // 
             // Lasttxt
             // 
             this.Lasttxt.Location = new System.Drawing.Point(131, 110);
             this.Lasttxt.Name = "Lasttxt";
             this.Lasttxt.Size = new System.Drawing.Size(140, 20);
-            this.Lasttxt.TabIndex = 48;
+            this.Lasttxt.TabIndex = 3;
             // 
             // Middlelbl
             // 
@@ -1011,7 +1018,7 @@
             this.Middlelbl.Location = new System.Drawing.Point(54, 92);
             this.Middlelbl.Name = "Middlelbl";
             this.Middlelbl.Size = new System.Drawing.Size(74, 15);
-            this.Middlelbl.TabIndex = 42;
+            this.Middlelbl.TabIndex = 0;
             this.Middlelbl.Text = "Middle Inital";
             // 
             // Lastlbl
@@ -1021,7 +1028,7 @@
             this.Lastlbl.Location = new System.Drawing.Point(53, 118);
             this.Lastlbl.Name = "Lastlbl";
             this.Lastlbl.Size = new System.Drawing.Size(75, 15);
-            this.Lastlbl.TabIndex = 41;
+            this.Lastlbl.TabIndex = 0;
             this.Lastlbl.Text = "Last Name *";
             // 
             // Firsttxt
@@ -1029,7 +1036,7 @@
             this.Firsttxt.Location = new System.Drawing.Point(131, 58);
             this.Firsttxt.Name = "Firsttxt";
             this.Firsttxt.Size = new System.Drawing.Size(140, 20);
-            this.Firsttxt.TabIndex = 46;
+            this.Firsttxt.TabIndex = 1;
             // 
             // Firstlbl
             // 
@@ -1038,7 +1045,7 @@
             this.Firstlbl.Location = new System.Drawing.Point(53, 66);
             this.Firstlbl.Name = "Firstlbl";
             this.Firstlbl.Size = new System.Drawing.Size(75, 15);
-            this.Firstlbl.TabIndex = 29;
+            this.Firstlbl.TabIndex = 0;
             this.Firstlbl.Text = "First Name *";
             // 
             // Requirementslbl
@@ -1048,7 +1055,7 @@
             this.Requirementslbl.Location = new System.Drawing.Point(120, 32);
             this.Requirementslbl.Name = "Requirementslbl";
             this.Requirementslbl.Size = new System.Drawing.Size(300, 20);
-            this.Requirementslbl.TabIndex = 26;
+            this.Requirementslbl.TabIndex = 0;
             this.Requirementslbl.Text = "Please Fill Out All Boxes Marked With ( * )";
             // 
             // Dashboard
@@ -1058,9 +1065,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(551, 729);
+            this.Controls.Add(this.Maintab);
             this.Controls.Add(this.NewUserpnl);
             this.Controls.Add(this.Loginpnl);
-            this.Controls.Add(this.Maintab);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dashboard";
@@ -1136,7 +1143,7 @@
         private System.Windows.Forms.Label Questionlbl;
         private System.Windows.Forms.Label Answerlbl;
         private System.Windows.Forms.TextBox CreatePinVerifytxt;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label NewPinRequirementslbl;
         private System.Windows.Forms.TextBox CreatePintxt;
         private System.Windows.Forms.Label CreatePinVerifylbl;
         private System.Windows.Forms.Label CreatePinlbl;
