@@ -119,12 +119,16 @@
             this.Firsttxt = new System.Windows.Forms.TextBox();
             this.Firstlbl = new System.Windows.Forms.Label();
             this.Requirementslbl = new System.Windows.Forms.Label();
+            this.historytab = new System.Windows.Forms.TabPage();
+            this.HistoryCancelbtn = new System.Windows.Forms.Button();
+            this.HistoryClearbtn = new System.Windows.Forms.Button();
             this.Maintab.SuspendLayout();
             this.dashboardtab.SuspendLayout();
             this.withdrawtab.SuspendLayout();
             this.deposittab.SuspendLayout();
             this.Loginpnl.SuspendLayout();
             this.NewUserpnl.SuspendLayout();
+            this.historytab.SuspendLayout();
             this.SuspendLayout();
             // 
             // Maintab
@@ -132,8 +136,10 @@
             this.Maintab.Controls.Add(this.dashboardtab);
             this.Maintab.Controls.Add(this.withdrawtab);
             this.Maintab.Controls.Add(this.deposittab);
+            this.Maintab.Controls.Add(this.historytab);
             this.Maintab.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Maintab.Location = new System.Drawing.Point(12, 12);
+            this.Maintab.Multiline = true;
             this.Maintab.Name = "Maintab";
             this.Maintab.SelectedIndex = 0;
             this.Maintab.Size = new System.Drawing.Size(446, 195);
@@ -177,7 +183,7 @@
             this.DashboardLogoutlbl.Location = new System.Drawing.Point(6, 151);
             this.DashboardLogoutlbl.Name = "DashboardLogoutlbl";
             this.DashboardLogoutlbl.Size = new System.Drawing.Size(45, 13);
-            this.DashboardLogoutlbl.TabIndex = 0;
+            this.DashboardLogoutlbl.TabIndex = 1;
             this.DashboardLogoutlbl.TabStop = true;
             this.DashboardLogoutlbl.Text = "Log Out";
             this.DashboardLogoutlbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Logoutlbl_LinkClicked);
@@ -1058,6 +1064,39 @@
             this.Requirementslbl.TabIndex = 0;
             this.Requirementslbl.Text = "Please Fill Out All Boxes Marked With ( * )";
             // 
+            // historytab
+            // 
+            this.historytab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.historytab.Controls.Add(this.HistoryClearbtn);
+            this.historytab.Controls.Add(this.HistoryCancelbtn);
+            this.historytab.Location = new System.Drawing.Point(4, 22);
+            this.historytab.Name = "historytab";
+            this.historytab.Padding = new System.Windows.Forms.Padding(3);
+            this.historytab.Size = new System.Drawing.Size(438, 169);
+            this.historytab.TabIndex = 3;
+            this.historytab.Text = "History";
+            this.historytab.UseVisualStyleBackColor = true;
+            // 
+            // HistoryCancelbtn
+            // 
+            this.HistoryCancelbtn.Location = new System.Drawing.Point(70, 134);
+            this.HistoryCancelbtn.Name = "HistoryCancelbtn";
+            this.HistoryCancelbtn.Size = new System.Drawing.Size(75, 23);
+            this.HistoryCancelbtn.TabIndex = 1;
+            this.HistoryCancelbtn.Text = "Cancel";
+            this.HistoryCancelbtn.UseVisualStyleBackColor = true;
+            this.HistoryCancelbtn.Click += new System.EventHandler(this.HistoryCancelbtn_Click);
+            // 
+            // HistoryClearbtn
+            // 
+            this.HistoryClearbtn.Location = new System.Drawing.Point(283, 134);
+            this.HistoryClearbtn.Name = "HistoryClearbtn";
+            this.HistoryClearbtn.Size = new System.Drawing.Size(75, 23);
+            this.HistoryClearbtn.TabIndex = 2;
+            this.HistoryClearbtn.Text = "Clear";
+            this.HistoryClearbtn.UseVisualStyleBackColor = true;
+            this.HistoryClearbtn.Click += new System.EventHandler(this.HistoryClearbtn_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1084,6 +1123,7 @@
             this.Loginpnl.PerformLayout();
             this.NewUserpnl.ResumeLayout(false);
             this.NewUserpnl.PerformLayout();
+            this.historytab.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1182,5 +1222,8 @@
         private System.Windows.Forms.TextBox Firsttxt;
         private System.Windows.Forms.Label Firstlbl;
         private System.Windows.Forms.Label Requirementslbl;
+        private System.Windows.Forms.TabPage historytab;
+        private System.Windows.Forms.Button HistoryCancelbtn;
+        private System.Windows.Forms.Button HistoryClearbtn;
     }
 }
