@@ -62,8 +62,6 @@ C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\bin\Debug\CSharpB
 C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\bin\Debug\MoneyLIb.dll
 C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.csprojResolveAssemblyReference.cache
 C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.Dashboard.resources
-C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.LoginForm.resources
-C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.NewUserForm.resources
 C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.Properties.Resources.resources
 C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.csproj.GenerateResource.Cache
 C:\Users\C Sharp.B056\Source\Repos\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.csproj.CoreCompileInputs.cache
