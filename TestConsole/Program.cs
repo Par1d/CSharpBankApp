@@ -15,15 +15,10 @@ namespace TestConsole
             Bank bank = new Bank();
             Customer bob = bank.CreateCustomer("bobby");
             Account myAccount = bank.OpenAccount(bob, 1234, 1234, "MyChecking", 500m);
-
-            //Console.WriteLine(bob.customer.Balance);
-
-            
+            bob.EnterBank(bank);
+            bob.WithdrawFromAccount(1234, 1234, 100m);
+            bob.Accounts[0].DisplayHistory();
             Console.ReadKey();
-
-            
-        
-
         }
     }
 }

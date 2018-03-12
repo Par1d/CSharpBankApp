@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MoneyLib;
 using System.Linq;
 using System.Text;
 
@@ -37,6 +38,10 @@ namespace BankClassLibrary
             }
         }
 
+        public void EnterBank(Bank bank)
+        {
+            _currentVendor = bank;
+        }
 
         public Customer(string username)
         {
@@ -48,6 +53,11 @@ namespace BankClassLibrary
         public void DisplayAccounts()
         {
             throw new System.NotImplementedException();
+        }
+
+        public List<CirculatingMoney> WithdrawFromAccount(int accountId, int pin, decimal amount)
+        {
+            return _currentVendor.WithdrawFromCustomerAccount(this, accountId, pin, amount);
         }
     }
 }

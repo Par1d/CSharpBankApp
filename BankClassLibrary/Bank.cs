@@ -44,6 +44,21 @@ namespace BankClassLibrary
 
         }
 
+        public List<MoneyLib.CirculatingMoney> WithdrawFromCustomerAccount(Customer cst, int accountId, int pin, decimal amount)
+        {
+            if (_customers.Contains(cst) && _accounts.ContainsKey(accountId) && 
+                cst.Accounts.Contains(_accounts[accountId]) && _accounts[accountId].Pin == pin)
+            {
+                _accounts[accountId].Withdraw(amount);
+                //Withdraw from vault and return
+                return new List<MoneyLib.CirculatingMoney> { new MoneyLib.Penny() };
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public decimal GetAccountBalance(Customer cst, int accountNumber)
         {
             return cst.Accounts[accountNumber].Balance;
