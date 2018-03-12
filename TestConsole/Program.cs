@@ -21,9 +21,10 @@ namespace TestConsole
             
             Console.ReadKey();
 
-            
+            int x = new int();
+            Console.WriteLine(x);
 
-           
+
         }
     }
 }

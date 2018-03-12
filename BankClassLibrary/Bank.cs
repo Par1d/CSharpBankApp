@@ -44,9 +44,9 @@ namespace BankClassLibrary
 
         }
 
-        public decimal GetAccountBalance(Customer cst, string accountNumber)
+        public decimal GetAccountBalance(Customer cst, int accountNumber)
         {
-            throw new System.NotImplementedException();
+            return cst.Accounts[accountNumber].Balance;
         }
     }
 }

@@ -15,4 +15,9 @@ namespace BankClassLibrary
     {
 
     }
+
+    class NotRegisteredWithBank : Exception
+    {
+
+    }
 }
