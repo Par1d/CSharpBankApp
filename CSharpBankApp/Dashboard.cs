@@ -140,6 +140,8 @@ namespace CSharpBankApp
             dashboardtab.Show();
             withdrawtab.Hide();
             deposittab.Hide();
+            historytab.Hide();
+
         }
 
         private void WithdrawClearbtn_Click(object sender, EventArgs e)
@@ -152,6 +154,10 @@ namespace CSharpBankApp
 
         private void WithdrawSubmitbtn_Click(object sender, EventArgs e)
         {
+            WithdrawAmounttxt.Clear();
+            WithdrawAmountVerifytxt.Clear();
+            WithdrawPintxt.Clear();
+            WithdrawPinVerifytxt.Clear();
             System.Windows.Forms.MessageBox.Show("Thank You for Your Withdrawl!");
         }
 
@@ -170,6 +176,7 @@ namespace CSharpBankApp
             deposittab.Hide();
             withdrawtab.Hide();
             dashboardtab.Show();
+            historytab.Hide();
         }
 
         private void DepositClearbtn_Click(object sender, EventArgs e)
@@ -182,6 +189,10 @@ namespace CSharpBankApp
 
         private void DepositSubmitbtn_Click(object sender, EventArgs e)
         {
+            DepositAmounttxt.Clear();
+            DepositAmountVerifytxt.Clear();
+            DepositPintxt.Clear();
+            DepositPinVerifytxt.Clear();
             System.Windows.Forms.MessageBox.Show("Thank You for Your Deposit!");
         }
 
@@ -190,6 +201,24 @@ namespace CSharpBankApp
         #endregion Deposit Tab
 
 
+
+        #region History Tab
+
+        private void HistoryCancelbtn_Click(object sender, EventArgs e)
+        {
+            historytab.Hide();
+            dashboardtab.Show();
+            withdrawtab.Hide();
+            deposittab.Hide();
+        }
+
+        private void HistoryClearbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        #endregion History Tab
 
         #endregion Dashboard App
     }
