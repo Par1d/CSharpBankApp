@@ -74,11 +74,7 @@ C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\bin\Debug\C
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\bin\Debug\CSharpBankApp.pdb
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.csprojResolveAssemblyReference.cache
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.Dashboard.resources
-C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.DepositForm.resources
-C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.LoginForm.resources
-C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.NewUserForm.resources
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.Properties.Resources.resources
-C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.WithdrawForm.resources
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.csproj.GenerateResource.Cache
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.csproj.CoreCompileInputs.cache
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.exe

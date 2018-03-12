@@ -12,6 +12,14 @@ namespace CSharpBankApp
 {
     public partial class Dashboard : Form
     {
+        #region Dashboard App
+
+
+
+        #region Dashboard Form Stuff
+
+
+
         public Dashboard()
         {
             InitializeComponent();
@@ -21,20 +29,168 @@ namespace CSharpBankApp
         {
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+
+
+        #endregion Dashboard Form Stuff
+
+
+
+        #region Log In Form
+
+
+
+        private void Loginbtn_Click(object sender, EventArgs e)
+        {
+            Loginpnl.Hide();
+            Maintab.Show();
+        }
+
+        private void LoginCancelbtn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void LogInlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Createlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form LoginForm = new LoginForm();
-            DialogResult selectedButton = LoginForm.ShowDialog();
-            if (selectedButton == DialogResult.OK)
+            NewUserpnl.Show();
+            Loginpnl.Hide();
+        }
+
+        private void Forgotlnk_Click(object sender, EventArgs e)
+        {
+            Loginpnl.Hide();
+            Maintab.Hide();
+            NewUserpnl.Hide();
+            ///ForgotPasswordpnl.Show();
+        }
+
+
+
+        #endregion Log In Form
+
+
+
+        #region New User Form
+
+
+
+        private void NewUserCancel_Click(object sender, EventArgs e)
+        {
+            NewUserpnl.Hide();
+            Loginpnl.Show();
+        }
+
+        private void NewUserSubmit_Click(object sender, EventArgs e)
+        {
+            NewUserpnl.Hide();
+            Loginpnl.Show();
+        }
+
+        private void NewUserClear_Click(object sender, EventArgs e)
+        {
+            Firsttxt.Clear(); Middletxt.Clear(); Lasttxt.Clear();
+            NewUsernametxt.Clear(); NewPasswordtxt.Clear();
+            NewPasswordVerifytxt.Clear(); Mailingtxt.Clear();
+            MailingCitytxt.Clear(); Physicaltxt.Clear(); PhysicalCitytxt.Clear();
+            Hometxt.Clear(); Worktxt.Clear(); Celltxt.Clear(); CreatePintxt.Clear();
+            CreatePinVerifytxt.Clear(); Emailtxt.Clear(); EmailVerifytxt.Clear();
+            Questiontxt.Clear(); Answertxt.Clear();
+        }
+
+        private void AddressCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (AddressCheck.Checked)
             {
-                LogInlbl.Hide();
-                maintab.Show();
+                Physicaltxt.ReadOnly = true;
+                PhysicalCitytxt.ReadOnly = true;
+            }
+            else
+            {
+                Physicaltxt.ReadOnly = false;
+                PhysicalCitytxt.ReadOnly = false;
             }
         }
+
+
+
+        #endregion New User Form
+
+
+
+        #region Dashboard Tab
+
+
+        private void Logoutlbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Maintab.Hide();
+            Loginpnl.Show();
+        }
+
+
+        #endregion Dashboard Tab
+
+
+
+        #region Withdraw Tab
+
+
+
+        private void WithdrawCancelbtn_Click(object sender, EventArgs e)
+        {
+            dashboardtab.Show();
+            withdrawtab.Hide();
+            deposittab.Hide();
+        }
+
+        private void WithdrawClearbtn_Click(object sender, EventArgs e)
+        {
+            WithdrawAmounttxt.Clear();
+            WithdrawAmountVerifytxt.Clear();
+            WithdrawPintxt.Clear();
+            WithdrawPinVerifytxt.Clear();
+        }
+
+        private void WithdrawSubmitbtn_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("Thank You for Your Withdrawl!");
+        }
+
+
+
+        #endregion Withdraw Tab
+
+
+
+        #region Deposit Tab
+
+
+
+        private void DepositCancelbtn_Click(object sender, EventArgs e)
+        {
+            deposittab.Hide();
+            withdrawtab.Hide();
+            dashboardtab.Show();
+        }
+
+        private void DepositClearbtn_Click(object sender, EventArgs e)
+        {
+            DepositAmounttxt.Clear();
+            DepositAmountVerifytxt.Clear();
+            DepositPintxt.Clear();
+            DepositPinVerifytxt.Clear();
+        }
+
+        private void DepositSubmitbtn_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.MessageBox.Show("Thank You for Your Deposit!");
+        }
+
+
+
+        #endregion Deposit Tab
+
+
+
+        #endregion Dashboard App
     }
 }

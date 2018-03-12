@@ -15,71 +15,88 @@ namespace BankClassLibrary
         //Password / combination
         
 
-        List<CirculatingMoney> VaultMoney;
+        
+        //twenty, ten, five, one, .25, .5, .1
+        //SortedPile[0] = 20's
+        /*SortedPile[1] = 10's
+         Sorted Pile[2] = 5's
+         
+         Sorted Pile[3] = 2's
+         Sorted Pile[4] = 1's
+         Sorted Pile[5] = .25
+         Sorted Pile[6] = .10
+         Sorted Pile[7] = .5
+         Sorted Pile[8] = .01*/
+        List<List<CirculatingMoney>> SortedPile = new List<List<CirculatingMoney>>();
+        
+        
 
 
         public Vault() {
-            VaultMoney = new List<CirculatingMoney>();
-
+            
+            for (int i = 0; i < 9; i++)
+            {
+                SortedPile.Add(new List<CirculatingMoney>());
+            }
 
         }
         
         //Lists the money objects in the VaultMoney
         public void ListMoney() {
-            for (int i = 0; i < VaultMoney.Count; i++) {
-                Console.WriteLine(VaultMoney[i].Value);
+            //go through the outer list
+            for (int i = 0; i < SortedPile.Count; i++) {
+                //at each index of the outerlist print each object in the inner list
+                for (int d = 0; d < SortedPile[i].Count; i++) {
+                    Console.WriteLine(SortedPile[i][d]);
+                }
             }
         }
-        //sorts the money objects in the VaultMoney
-        public void SortMoney()
-        {
-            VaultMoney.Sort();
-        }
+        
         //add money objects to the list
         //coins
         public void addPenny(){
-            
-            VaultMoney.Add(new Penny());
+
+            SortedPile[8].Add(new Penny());
         }
         public void addNickel()
         {
-           
-            VaultMoney.Add(new Nickel());
+
+            SortedPile[7].Add(new Nickel());
         }
         public void addDime()
         {
-            
-            VaultMoney.Add(new Dime());
+
+            SortedPile[6].Add(new Dime());
         }
         public void addQuarter()
         {
-            
-            VaultMoney.Add(new Quarter());
+
+            SortedPile[5].Add(new Quarter());
         }
         //bills
         public void addDollarBill()
         {
-            
-            VaultMoney.Add(new DollarBill());
+
+            SortedPile[4].Add(new DollarBill());
         }
         public void addTwoDollar()
         {
-            
-            VaultMoney.Add(new TwoDollarBill());
+
+            SortedPile[3].Add(new TwoDollarBill());
         }
         public void addFiveDollar()
         {
-            
-            VaultMoney.Add(new FiveDollarBill());
+
+            SortedPile[2].Add(new FiveDollarBill());
         }
         public void addTenDollarBill()
         {
-            VaultMoney.Add(new TenDollarBill());
+            SortedPile[1].Add(new TenDollarBill());
         }
         public void addTwentyDollarBill()
         {
-            
-            VaultMoney.Add(new TwentyDollarBill());
+
+            SortedPile[0].Add(new TwentyDollarBill());
         }
 
 
@@ -94,13 +111,29 @@ namespace BankClassLibrary
             //put money objects into VaultMoney
 
             for (int i = 0; i < Money.Count; i++) {
-                VaultMoney.Add(Money[i]);
+                //rewrite for list in lists vault UnsortedPile.Add(Money[i]);
             }
 
             
 
         }
         //next is remove money
+        //request for an amount of money
+       
+        public List<CirculatingMoney> RemoveMoney(decimal amt) {
+            //17.89
+            
+            /*if the  money object is in the vault
+             sort list*/
+             
+            if (amt >= 20.0m ) {
+
+                //go through the vault list and remove the first instance of that number
+            }
+            List<CirculatingMoney> list = new List<CirculatingMoney>();
+            
+            return list;
+        }
         
     }
 
