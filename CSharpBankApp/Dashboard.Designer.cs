@@ -62,7 +62,7 @@
             this.DepositSecondarylbl = new System.Windows.Forms.Label();
             this.DepositMainlbl = new System.Windows.Forms.Label();
             this.Historytab = new System.Windows.Forms.TabPage();
-            this.HistoryClearbtn = new System.Windows.Forms.Button();
+            this.historyselector = new System.Windows.Forms.MonthCalendar();
             this.HistoryCancelbtn = new System.Windows.Forms.Button();
             this.Loginpnl = new System.Windows.Forms.Panel();
             this.Forgotlnk = new System.Windows.Forms.LinkLabel();
@@ -122,6 +122,7 @@
             this.Firsttxt = new System.Windows.Forms.TextBox();
             this.Firstlbl = new System.Windows.Forms.Label();
             this.Requirementslbl = new System.Windows.Forms.Label();
+            this.selectlbl = new System.Windows.Forms.Label();
             this.Maintab.SuspendLayout();
             this.dashboardtab.SuspendLayout();
             this.withdrawtab.SuspendLayout();
@@ -486,7 +487,8 @@
             // Historytab
             // 
             this.Historytab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Historytab.Controls.Add(this.HistoryClearbtn);
+            this.Historytab.Controls.Add(this.selectlbl);
+            this.Historytab.Controls.Add(this.historyselector);
             this.Historytab.Controls.Add(this.HistoryCancelbtn);
             this.Historytab.Location = new System.Drawing.Point(4, 22);
             this.Historytab.Name = "Historytab";
@@ -496,19 +498,16 @@
             this.Historytab.Text = "History";
             this.Historytab.UseVisualStyleBackColor = true;
             // 
-            // HistoryClearbtn
+            // historyselector
             // 
-            this.HistoryClearbtn.Location = new System.Drawing.Point(283, 134);
-            this.HistoryClearbtn.Name = "HistoryClearbtn";
-            this.HistoryClearbtn.Size = new System.Drawing.Size(75, 23);
-            this.HistoryClearbtn.TabIndex = 2;
-            this.HistoryClearbtn.Text = "Clear";
-            this.HistoryClearbtn.UseVisualStyleBackColor = true;
-            this.HistoryClearbtn.Click += new System.EventHandler(this.HistoryClearbtn_Click);
+            this.historyselector.Location = new System.Drawing.Point(150, 3);
+            this.historyselector.MaxSelectionCount = 31;
+            this.historyselector.Name = "historyselector";
+            this.historyselector.TabIndex = 0;
             // 
             // HistoryCancelbtn
             // 
-            this.HistoryCancelbtn.Location = new System.Drawing.Point(70, 134);
+            this.HistoryCancelbtn.Location = new System.Drawing.Point(12, 132);
             this.HistoryCancelbtn.Name = "HistoryCancelbtn";
             this.HistoryCancelbtn.Size = new System.Drawing.Size(75, 23);
             this.HistoryCancelbtn.TabIndex = 1;
@@ -1098,6 +1097,15 @@
             this.Requirementslbl.TabIndex = 0;
             this.Requirementslbl.Text = "Please Fill Out All Boxes Marked With ( * )";
             // 
+            // selectlbl
+            // 
+            this.selectlbl.Location = new System.Drawing.Point(9, 11);
+            this.selectlbl.Name = "selectlbl";
+            this.selectlbl.Size = new System.Drawing.Size(104, 84);
+            this.selectlbl.TabIndex = 0;
+            this.selectlbl.Text = "Please select the day(s) of the history you wish to view. If selecting multiple d" +
+    "ays, please click and drag.";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1225,6 +1233,7 @@
         private System.Windows.Forms.Label Requirementslbl;
         private System.Windows.Forms.TabPage Historytab;
         private System.Windows.Forms.Button HistoryCancelbtn;
-        private System.Windows.Forms.Button HistoryClearbtn;
+        private System.Windows.Forms.MonthCalendar historyselector;
+        private System.Windows.Forms.Label selectlbl;
     }
 }

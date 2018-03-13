@@ -212,11 +212,6 @@ namespace CSharpBankApp
             deposittab.Hide();
         }
 
-        private void HistoryClearbtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
         #endregion History Tab
 
