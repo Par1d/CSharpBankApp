@@ -19,6 +19,7 @@ namespace TestConsole
             bob.WithdrawFromAccount(1234, 1234, 100m);
             bob.WithdrawFromAccount(1234, 1234, 200m);
             bob.Accounts[0].DisplayHistory();
+
             Console.ReadKey();
         }
     }

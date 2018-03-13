@@ -28,9 +28,13 @@ namespace BankClassLibrary
          Sorted Pile[7] = .5
          Sorted Pile[8] = .01*/
         List<List<CirculatingMoney>> SortedPile = new List<List<CirculatingMoney>>();
-        
-        
 
+        List<CirculatingMoney> b = new List<CirculatingMoney>();
+        public void sorting() {
+            b.Sort();
+        }
+        //hashtable?
+        
 
         public Vault() {
             
