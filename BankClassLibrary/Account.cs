@@ -29,6 +29,10 @@ namespace BankClassLibrary
         public decimal Balance { get { return _balance; } }
         public List<Transaction> History { get { return _history; } }
 
+        /// <summary>
+        /// Deposits a decimal amount into the account's balance and records the history
+        /// </summary>
+        /// <param name="amount">The amount to be deposited into the account</param>
         public void Deposit(decimal amount)
         {
             Transaction transaction = new Transaction(amount, _accountID, TransactionType.Deposit);
@@ -36,6 +40,10 @@ namespace BankClassLibrary
             _balance += amount;
         }
 
+        /// <summary>
+        /// Withdraws a decimal amount from the account's balance and records the history
+        /// </summary>
+        /// <param name="amount">The amount to be withdrawan from the account</param>
         public void Withdraw(decimal amount)
         {
             if (amount > _balance)
@@ -50,6 +58,9 @@ namespace BankClassLibrary
             }
         }
 
+        /// <summary>
+        /// Displays the accounts history to the console
+        /// </summary>
         public void DisplayHistory()
         {
             Console.WriteLine("{0}{1}{2}{3}", "Type:".PadRight(15), "Account:".PadRight(15), "Amount:".PadRight(15), "Date:");
