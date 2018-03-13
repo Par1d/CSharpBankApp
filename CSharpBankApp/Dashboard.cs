@@ -30,7 +30,6 @@ namespace CSharpBankApp
         }
 
 
-
         #endregion Dashboard Form Stuff
 
 
@@ -140,7 +139,7 @@ namespace CSharpBankApp
             dashboardtab.Show();
             withdrawtab.Hide();
             deposittab.Hide();
-            historytab.Hide();
+            Historytab.Hide();
 
         }
 
@@ -176,7 +175,7 @@ namespace CSharpBankApp
             deposittab.Hide();
             withdrawtab.Hide();
             dashboardtab.Show();
-            historytab.Hide();
+            Historytab.Hide();
         }
 
         private void DepositClearbtn_Click(object sender, EventArgs e)
@@ -204,10 +203,11 @@ namespace CSharpBankApp
 
         #region History Tab
 
+
         private void HistoryCancelbtn_Click(object sender, EventArgs e)
         {
-            historytab.Hide();
             dashboardtab.Show();
+            Historytab.Hide();
             withdrawtab.Hide();
             deposittab.Hide();
         }
