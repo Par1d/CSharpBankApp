@@ -212,9 +212,28 @@ namespace CSharpBankApp
             deposittab.Hide();
         }
 
+        private void HistoryConfirmbtn_Click(object sender, EventArgs e)
+        {
+            this.HistorySelector = new System.Windows.Forms.MonthCalendar();
+            this.HistorySelector.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.HistorySelector_DateSelected);
+        }
+
+        private void HistorySelector_DateSelected(object sender, System.Windows.Forms.DateRangeEventArgs e)
+        {
+            this.DateVerify.Text = "Date Selected: Start = " +
+                e.Start.ToShortDateString() + " : End = " + e.End.ToShortDateString();
+        }
+
+        private void HistorySelector_DateChanged(object sender, System.Windows.Forms.DateRangeEventArgs e)
+        {
+            this.DateVerify.Text = "Date Changed: Start =  " +
+                e.Start.ToShortDateString() + " : End = " + e.End.ToShortDateString();
+        }
+
 
         #endregion History Tab
 
         #endregion Dashboard App
+
     }
 }

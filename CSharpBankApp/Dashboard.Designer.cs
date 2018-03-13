@@ -62,7 +62,9 @@
             this.DepositSecondarylbl = new System.Windows.Forms.Label();
             this.DepositMainlbl = new System.Windows.Forms.Label();
             this.Historytab = new System.Windows.Forms.TabPage();
-            this.historyselector = new System.Windows.Forms.MonthCalendar();
+            this.HistoryConfirmbtn = new System.Windows.Forms.Button();
+            this.selectlbl = new System.Windows.Forms.Label();
+            this.HistorySelector = new System.Windows.Forms.MonthCalendar();
             this.HistoryCancelbtn = new System.Windows.Forms.Button();
             this.Loginpnl = new System.Windows.Forms.Panel();
             this.Forgotlnk = new System.Windows.Forms.LinkLabel();
@@ -122,7 +124,7 @@
             this.Firsttxt = new System.Windows.Forms.TextBox();
             this.Firstlbl = new System.Windows.Forms.Label();
             this.Requirementslbl = new System.Windows.Forms.Label();
-            this.selectlbl = new System.Windows.Forms.Label();
+            this.DateVerify = new System.Windows.Forms.TextBox();
             this.Maintab.SuspendLayout();
             this.dashboardtab.SuspendLayout();
             this.withdrawtab.SuspendLayout();
@@ -487,8 +489,10 @@
             // Historytab
             // 
             this.Historytab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Historytab.Controls.Add(this.DateVerify);
+            this.Historytab.Controls.Add(this.HistoryConfirmbtn);
             this.Historytab.Controls.Add(this.selectlbl);
-            this.Historytab.Controls.Add(this.historyselector);
+            this.Historytab.Controls.Add(this.HistorySelector);
             this.Historytab.Controls.Add(this.HistoryCancelbtn);
             this.Historytab.Location = new System.Drawing.Point(4, 22);
             this.Historytab.Name = "Historytab";
@@ -498,12 +502,31 @@
             this.Historytab.Text = "History";
             this.Historytab.UseVisualStyleBackColor = true;
             // 
-            // historyselector
+            // HistoryConfirmbtn
             // 
-            this.historyselector.Location = new System.Drawing.Point(150, 3);
-            this.historyselector.MaxSelectionCount = 31;
-            this.historyselector.Name = "historyselector";
-            this.historyselector.TabIndex = 0;
+            this.HistoryConfirmbtn.Location = new System.Drawing.Point(346, 132);
+            this.HistoryConfirmbtn.Name = "HistoryConfirmbtn";
+            this.HistoryConfirmbtn.Size = new System.Drawing.Size(75, 23);
+            this.HistoryConfirmbtn.TabIndex = 2;
+            this.HistoryConfirmbtn.Text = "Confirm";
+            this.HistoryConfirmbtn.UseVisualStyleBackColor = true;
+            this.HistoryConfirmbtn.Click += new System.EventHandler(this.HistoryConfirmbtn_Click);
+            // 
+            // selectlbl
+            // 
+            this.selectlbl.Location = new System.Drawing.Point(9, 11);
+            this.selectlbl.Name = "selectlbl";
+            this.selectlbl.Size = new System.Drawing.Size(104, 84);
+            this.selectlbl.TabIndex = 0;
+            this.selectlbl.Text = "Please select the day(s) of the history you wish to view. If selecting multiple d" +
+    "ays, please click and drag.";
+            // 
+            // HistorySelector
+            // 
+            this.HistorySelector.Location = new System.Drawing.Point(113, 3);
+            this.HistorySelector.MaxSelectionCount = 31;
+            this.HistorySelector.Name = "HistorySelector";
+            this.HistorySelector.TabIndex = 0;
             // 
             // HistoryCancelbtn
             // 
@@ -1097,14 +1120,14 @@
             this.Requirementslbl.TabIndex = 0;
             this.Requirementslbl.Text = "Please Fill Out All Boxes Marked With ( * )";
             // 
-            // selectlbl
+            // DateVerify
             // 
-            this.selectlbl.Location = new System.Drawing.Point(9, 11);
-            this.selectlbl.Name = "selectlbl";
-            this.selectlbl.Size = new System.Drawing.Size(104, 84);
-            this.selectlbl.TabIndex = 0;
-            this.selectlbl.Text = "Please select the day(s) of the history you wish to view. If selecting multiple d" +
-    "ays, please click and drag.";
+            this.DateVerify.Location = new System.Drawing.Point(346, 29);
+            this.DateVerify.Multiline = true;
+            this.DateVerify.Name = "DateVerify";
+            this.DateVerify.ReadOnly = true;
+            this.DateVerify.Size = new System.Drawing.Size(75, 78);
+            this.DateVerify.TabIndex = 0;
             // 
             // Dashboard
             // 
@@ -1129,6 +1152,7 @@
             this.deposittab.ResumeLayout(false);
             this.deposittab.PerformLayout();
             this.Historytab.ResumeLayout(false);
+            this.Historytab.PerformLayout();
             this.Loginpnl.ResumeLayout(false);
             this.Loginpnl.PerformLayout();
             this.NewUserpnl.ResumeLayout(false);
@@ -1233,7 +1257,9 @@
         private System.Windows.Forms.Label Requirementslbl;
         private System.Windows.Forms.TabPage Historytab;
         private System.Windows.Forms.Button HistoryCancelbtn;
-        private System.Windows.Forms.MonthCalendar historyselector;
+        private System.Windows.Forms.MonthCalendar HistorySelector;
         private System.Windows.Forms.Label selectlbl;
+        private System.Windows.Forms.Button HistoryConfirmbtn;
+        private System.Windows.Forms.TextBox DateVerify;
     }
 }
