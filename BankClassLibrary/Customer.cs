@@ -49,11 +49,6 @@ namespace BankClassLibrary
             _accounts = new List<Account>();
         }
 
-        
-        public void DisplayAccounts()
-        {
-            throw new System.NotImplementedException();
-        }
 
         public List<CirculatingMoney> WithdrawFromAccount(int accountId, int pin, decimal amount)
         {

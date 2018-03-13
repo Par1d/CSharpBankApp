@@ -22,6 +22,11 @@ namespace BankClassLibrary
             _customers = new List<Customer>();
         }
 
+        /// <summary>
+        /// Creates a customer and registers it with the bank
+        /// </summary>
+        /// <param name="username">Human friendly username</param>
+        /// <returns></returns>
         public Customer CreateCustomer(string username)
         {
             Customer cst = new Customer(username);
@@ -29,6 +34,15 @@ namespace BankClassLibrary
             return cst;
         }
 
+        /// <summary>
+        /// Opens account with the bank and assigns it to a customer
+        /// </summary>
+        /// <param name="cst">Owner of the account</param>
+        /// <param name="accountID">Unique identifier for account</param>
+        /// <param name="PIN">Passcode to use the account</param>
+        /// <param name="accountName">Human friendly name for account</param>
+        /// <param name="depositAmount">Initial deposit amount</param>
+        /// <returns></returns>
         public Account OpenAccount(Customer cst, int accountID, int PIN, string accountName, decimal depositAmount = 0)
         {
             if (_accounts.ContainsKey(accountID))
@@ -44,6 +58,14 @@ namespace BankClassLibrary
 
         }
 
+        /// <summary>
+        /// Withdraws money from the specified account and returns money from the vault
+        /// </summary>
+        /// <param name="cst">The owner of the account</param>
+        /// <param name="accountId">Unique identifier of existing account</param>
+        /// <param name="pin">Passcode for existing account</param>
+        /// <param name="amount">Amount of money to be withdrawan from account</param>
+        /// <returns></returns>
         public List<MoneyLib.CirculatingMoney> WithdrawFromCustomerAccount(Customer cst, int accountId, int pin, decimal amount)
         {
             if (_customers.Contains(cst) && _accounts.ContainsKey(accountId) && 
@@ -57,11 +79,6 @@ namespace BankClassLibrary
             {
                 return null;
             }
-        }
-
-        public decimal GetAccountBalance(Customer cst, int accountNumber)
-        {
-            return cst.Accounts[accountNumber].Balance;
         }
     }
 }
