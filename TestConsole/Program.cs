@@ -64,5 +64,7 @@ namespace TestConsole
             v.enterVault(q);
             Console.ReadKey();
         }
+
+        IComparable penny = new Penny();
     }
 }

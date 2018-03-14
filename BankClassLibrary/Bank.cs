@@ -26,7 +26,7 @@ namespace BankClassLibrary
         /// Creates a customer and registers it with the bank
         /// </summary>
         /// <param name="username">Human friendly username</param>
-        /// <returns></returns>
+        /// <returns>A new customer object</returns>
         public Customer CreateCustomer(string username)
         {
             Customer cst = new Customer(username);
@@ -42,7 +42,7 @@ namespace BankClassLibrary
         /// <param name="PIN">Passcode to use the account</param>
         /// <param name="accountName">Human friendly name for account</param>
         /// <param name="depositAmount">Initial deposit amount</param>
-        /// <returns></returns>
+        /// <returns>A new account object</returns>
         public Account OpenAccount(Customer cst, int accountID, int PIN, string accountName, decimal depositAmount = 0)
         {
             if (_accounts.ContainsKey(accountID))
@@ -65,7 +65,7 @@ namespace BankClassLibrary
         /// <param name="accountId">Unique identifier of existing account</param>
         /// <param name="pin">Passcode for existing account</param>
         /// <param name="amount">Amount of money to be withdrawan from account</param>
-        /// <returns></returns>
+        /// <returns>A list of circulating money representing the amount that was withdrawn</returns>
         public List<MoneyLib.CirculatingMoney> WithdrawFromCustomerAccount(Customer cst, int accountId, int pin, decimal amount)
         {
             if (_customers.Contains(cst) && _accounts.ContainsKey(accountId) && 
