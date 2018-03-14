@@ -139,7 +139,7 @@ namespace CSharpBankApp
             dashboardtab.Show();
             withdrawtab.Hide();
             deposittab.Hide();
-            Historytab.Hide();
+            historytab.Hide();
 
         }
 
@@ -175,7 +175,7 @@ namespace CSharpBankApp
             deposittab.Hide();
             withdrawtab.Hide();
             dashboardtab.Show();
-            Historytab.Hide();
+            historytab.Hide();
         }
 
         private void DepositClearbtn_Click(object sender, EventArgs e)
@@ -207,15 +207,14 @@ namespace CSharpBankApp
         private void HistoryCancelbtn_Click(object sender, EventArgs e)
         {
             dashboardtab.Show();
-            Historytab.Hide();
+            historytab.Hide();
             withdrawtab.Hide();
             deposittab.Hide();
         }
 
         private void HistoryConfirmbtn_Click(object sender, EventArgs e)
         {
-            this.HistorySelector = new System.Windows.Forms.MonthCalendar();
-            this.HistorySelector.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.HistorySelector_DateSelected);
+            new HistoryForm().Show();
         }
 
         private void HistorySelector_DateSelected(object sender, System.Windows.Forms.DateRangeEventArgs e)
@@ -232,6 +231,8 @@ namespace CSharpBankApp
 
 
         #endregion History Tab
+
+
 
         #endregion Dashboard App
 

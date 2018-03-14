@@ -61,7 +61,7 @@
             this.DepositAmounttxt = new System.Windows.Forms.TextBox();
             this.DepositSecondarylbl = new System.Windows.Forms.Label();
             this.DepositMainlbl = new System.Windows.Forms.Label();
-            this.Historytab = new System.Windows.Forms.TabPage();
+            this.historytab = new System.Windows.Forms.TabPage();
             this.DateVerify = new System.Windows.Forms.TextBox();
             this.HistoryConfirmbtn = new System.Windows.Forms.Button();
             this.selectlbl = new System.Windows.Forms.Label();
@@ -129,7 +129,7 @@
             this.dashboardtab.SuspendLayout();
             this.withdrawtab.SuspendLayout();
             this.deposittab.SuspendLayout();
-            this.Historytab.SuspendLayout();
+            this.historytab.SuspendLayout();
             this.Loginpnl.SuspendLayout();
             this.NewUserpnl.SuspendLayout();
             this.SuspendLayout();
@@ -139,7 +139,7 @@
             this.Maintab.Controls.Add(this.dashboardtab);
             this.Maintab.Controls.Add(this.withdrawtab);
             this.Maintab.Controls.Add(this.deposittab);
-            this.Maintab.Controls.Add(this.Historytab);
+            this.Maintab.Controls.Add(this.historytab);
             this.Maintab.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Maintab.Location = new System.Drawing.Point(12, 12);
             this.Maintab.Multiline = true;
@@ -486,21 +486,21 @@
             this.DepositMainlbl.Text = "Please Enter The Amount You Wish To Deposit And Provide Your Pin For Verification" +
     "";
             // 
-            // Historytab
+            // historytab
             // 
-            this.Historytab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Historytab.Controls.Add(this.DateVerify);
-            this.Historytab.Controls.Add(this.HistoryConfirmbtn);
-            this.Historytab.Controls.Add(this.selectlbl);
-            this.Historytab.Controls.Add(this.HistorySelector);
-            this.Historytab.Controls.Add(this.HistoryCancelbtn);
-            this.Historytab.Location = new System.Drawing.Point(4, 22);
-            this.Historytab.Name = "Historytab";
-            this.Historytab.Padding = new System.Windows.Forms.Padding(3);
-            this.Historytab.Size = new System.Drawing.Size(438, 169);
-            this.Historytab.TabIndex = 3;
-            this.Historytab.Text = "History";
-            this.Historytab.UseVisualStyleBackColor = true;
+            this.historytab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.historytab.Controls.Add(this.DateVerify);
+            this.historytab.Controls.Add(this.HistoryConfirmbtn);
+            this.historytab.Controls.Add(this.selectlbl);
+            this.historytab.Controls.Add(this.HistorySelector);
+            this.historytab.Controls.Add(this.HistoryCancelbtn);
+            this.historytab.Location = new System.Drawing.Point(4, 22);
+            this.historytab.Name = "historytab";
+            this.historytab.Padding = new System.Windows.Forms.Padding(3);
+            this.historytab.Size = new System.Drawing.Size(438, 169);
+            this.historytab.TabIndex = 3;
+            this.historytab.Text = "History";
+            this.historytab.UseVisualStyleBackColor = true;
             // 
             // DateVerify
             // 
@@ -1153,8 +1153,8 @@
             this.withdrawtab.PerformLayout();
             this.deposittab.ResumeLayout(false);
             this.deposittab.PerformLayout();
-            this.Historytab.ResumeLayout(false);
-            this.Historytab.PerformLayout();
+            this.historytab.ResumeLayout(false);
+            this.historytab.PerformLayout();
             this.Loginpnl.ResumeLayout(false);
             this.Loginpnl.PerformLayout();
             this.NewUserpnl.ResumeLayout(false);
@@ -1257,7 +1257,7 @@
         private System.Windows.Forms.TextBox Firsttxt;
         private System.Windows.Forms.Label Firstlbl;
         private System.Windows.Forms.Label Requirementslbl;
-        private System.Windows.Forms.TabPage Historytab;
+        private System.Windows.Forms.TabPage historytab;
         private System.Windows.Forms.Button HistoryCancelbtn;
         private System.Windows.Forms.MonthCalendar HistorySelector;
         private System.Windows.Forms.Label selectlbl;
