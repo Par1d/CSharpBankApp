@@ -21,5 +21,7 @@ namespace TestConsole
             bob.Accounts[0].DisplayHistory();
             Console.ReadKey();
         }
+
+        IComparable penny = new Penny();
     }
 }
