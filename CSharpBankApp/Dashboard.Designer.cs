@@ -62,6 +62,7 @@
             this.DepositSecondarylbl = new System.Windows.Forms.Label();
             this.DepositMainlbl = new System.Windows.Forms.Label();
             this.Historytab = new System.Windows.Forms.TabPage();
+            this.DateVerify = new System.Windows.Forms.TextBox();
             this.HistoryConfirmbtn = new System.Windows.Forms.Button();
             this.selectlbl = new System.Windows.Forms.Label();
             this.HistorySelector = new System.Windows.Forms.MonthCalendar();
@@ -124,7 +125,6 @@
             this.Firsttxt = new System.Windows.Forms.TextBox();
             this.Firstlbl = new System.Windows.Forms.Label();
             this.Requirementslbl = new System.Windows.Forms.Label();
-            this.DateVerify = new System.Windows.Forms.TextBox();
             this.Maintab.SuspendLayout();
             this.dashboardtab.SuspendLayout();
             this.withdrawtab.SuspendLayout();
@@ -502,6 +502,15 @@
             this.Historytab.Text = "History";
             this.Historytab.UseVisualStyleBackColor = true;
             // 
+            // DateVerify
+            // 
+            this.DateVerify.Location = new System.Drawing.Point(346, 3);
+            this.DateVerify.Multiline = true;
+            this.DateVerify.Name = "DateVerify";
+            this.DateVerify.ReadOnly = true;
+            this.DateVerify.Size = new System.Drawing.Size(75, 123);
+            this.DateVerify.TabIndex = 0;
+            // 
             // HistoryConfirmbtn
             // 
             this.HistoryConfirmbtn.Location = new System.Drawing.Point(346, 132);
@@ -527,6 +536,8 @@
             this.HistorySelector.MaxSelectionCount = 31;
             this.HistorySelector.Name = "HistorySelector";
             this.HistorySelector.TabIndex = 0;
+            this.HistorySelector.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.HistorySelector_DateChanged);
+            this.HistorySelector.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.HistorySelector_DateSelected);
             // 
             // HistoryCancelbtn
             // 
@@ -1119,15 +1130,6 @@
             this.Requirementslbl.Size = new System.Drawing.Size(300, 20);
             this.Requirementslbl.TabIndex = 0;
             this.Requirementslbl.Text = "Please Fill Out All Boxes Marked With ( * )";
-            // 
-            // DateVerify
-            // 
-            this.DateVerify.Location = new System.Drawing.Point(346, 29);
-            this.DateVerify.Multiline = true;
-            this.DateVerify.Name = "DateVerify";
-            this.DateVerify.ReadOnly = true;
-            this.DateVerify.Size = new System.Drawing.Size(75, 78);
-            this.DateVerify.TabIndex = 0;
             // 
             // Dashboard
             // 
