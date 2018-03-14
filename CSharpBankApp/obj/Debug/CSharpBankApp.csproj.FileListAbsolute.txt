@@ -78,3 +78,4 @@ C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\C
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.exe
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.pdb
 C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\bin\Debug\MoneyLIb.dll
+C:\Users\C Sharp.B056\Documents\_C Sharp\CSharpBankApp\CSharpBankApp\obj\Debug\CSharpBankApp.csproj.CopyComplete
