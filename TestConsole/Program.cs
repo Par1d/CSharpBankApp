@@ -22,5 +22,7 @@ namespace TestConsole
 
             Console.ReadKey();
         }
+
+        IComparable penny = new Penny();
     }
 }
