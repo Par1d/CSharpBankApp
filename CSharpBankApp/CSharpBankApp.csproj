@@ -59,6 +59,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotForm.Designer.cs">
+      <DependentUpon>ForgotForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HistoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotForm.resx">
+      <DependentUpon>ForgotForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HistoryForm.resx">
       <DependentUpon>HistoryForm.cs</DependentUpon>

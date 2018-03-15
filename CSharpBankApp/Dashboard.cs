@@ -55,12 +55,9 @@ namespace CSharpBankApp
             Loginpnl.Hide();
         }
 
-        private void Forgotlnk_Click(object sender, EventArgs e)
+        private void Forgotlnk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Loginpnl.Hide();
-            Maintab.Hide();
-            NewUserpnl.Hide();
-            ///ForgotPasswordpnl.Show();
+            new ForgotForm().Show();
         }
 
 
@@ -230,9 +227,9 @@ namespace CSharpBankApp
         }
 
 
+
+
         #endregion History Tab
-
-
 
         #endregion Dashboard App
 

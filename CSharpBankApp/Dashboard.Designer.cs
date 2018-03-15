@@ -574,6 +574,7 @@
             this.Forgotlnk.TabIndex = 6;
             this.Forgotlnk.TabStop = true;
             this.Forgotlnk.Text = "Forgot Password?";
+            this.Forgotlnk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Forgotlnk_LinkClicked);
             // 
             // Createlbl
             // 
@@ -1138,9 +1139,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(551, 729);
+            this.Controls.Add(this.Loginpnl);
             this.Controls.Add(this.Maintab);
             this.Controls.Add(this.NewUserpnl);
-            this.Controls.Add(this.Loginpnl);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dashboard";
