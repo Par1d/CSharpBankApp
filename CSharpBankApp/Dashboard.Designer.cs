@@ -1139,9 +1139,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(551, 729);
-            this.Controls.Add(this.Loginpnl);
             this.Controls.Add(this.Maintab);
             this.Controls.Add(this.NewUserpnl);
+            this.Controls.Add(this.Loginpnl);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dashboard";
