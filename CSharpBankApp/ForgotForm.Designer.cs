@@ -124,6 +124,7 @@
             this.Controls.Add(this.ForgotPinlbl);
             this.Controls.Add(this.ForgotEmaillbl);
             this.Controls.Add(this.Forgotmain);
+            this.MaximumSize = new System.Drawing.Size(350, 192);
             this.Name = "ForgotForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Forgot Password";
