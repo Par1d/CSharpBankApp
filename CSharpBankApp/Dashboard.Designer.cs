@@ -1142,6 +1142,7 @@
             this.Controls.Add(this.Maintab);
             this.Controls.Add(this.NewUserpnl);
             this.Controls.Add(this.Loginpnl);
+            this.MaximumSize = new System.Drawing.Size(567, 768);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dashboard";
